@@ -14,9 +14,7 @@ BODY {
   line-height: 1.4em;
 }
 
-IMG {
-  border: 0;
-}
+IMG { border: 0; }
 
 HR {
   display: block;
@@ -40,18 +38,8 @@ A:hover, A:active {
   text-decoration: none;
 }
 
-H1 {
-  font-size: 170%;
-  margin: 0 0 0.5em;
-}
-
-H2 {
-  font-size: 150%;
-  margin: 0 0 0.5em;
-}
-
 .site-width {
-  width: 1000px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -62,57 +50,153 @@ H2 {
   clear: both;
 }
 
-.menu UL {
-  margin: 0;
+HEADER {
+  background: #07161B;
+  color: #FFFFFF;
+  border-bottom: 10px solid #23AAE2;
+}
+
+.home HEADER {
+  background: transparent;
+  border-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.home HEADER.sticky {
+  position: fixed;
+  background: #07161B;
+  border-bottom: 10px solid #23AAE2;
+}
+
+#waypoint-trigger.sticky { height: 190px; }
+
+HEADER .site-width {
+  width: 1130px;
+  position: relative;
+}
+
+#logo {
+  display: inline-block;
+  height: 113px;
+  margin: 23px 0 0 15px;
+}
+
+#logo IMG {
+  max-height: 100%;
+  width: auto;
+}
+
+HEADER .right {
+  float: right;
+  margin-top: 50px;
+}
+
+HEADER .right .call {
+  padding-right: 15px;
+  text-align: right;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+HEADER .right .call SPAN {
+  display: inline-block;
+  padding-left: 0.25em;
+  font-size: 187.5%;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  color: #23AAE2;
+}
+
+HEADER .right .call SPAN A { color: #23AAE2; }
+
+HEADER .right UL {
+  margin: 1.5em 0 0;
   padding: 0;
   list-style-type: none;
-}
-
-.menu UL LI {
-  display: inline-block;
-  padding-right: 2em;
-  position: relative;
-  z-index: 99;
-}
-
-.menu UL LI A:link, .menu UL LI A:visited,
-.menu UL LI UL LI A:link, .menu UL LI UL LI A:visited {
-  color: #008800;
-  text-decoration: none;
-}
-
-.menu UL LI:hover A,
-.menu UL LI UL LI A:hover {
-  color: #888888;
-  text-decoration: none;
-}
-
-.menu UL LI UL {
-  display: none;
-  padding-bottom: 0.1em;
-}
-
-.menu UL LI:hover UL {
-  display: block;
-  position: absolute;
-  top: 1.4em;
-  left: 0;
-}
-
-.menu UL LI UL LI {
-  display: block;
-  padding: 0.2em 0;
-  font-size: 0.8em;
-  height: 1em;
+  font-weight: 700;
   line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.menu UL LI UL LI A {
+HEADER .right UL LI {
+  display: inline-block;
+  margin-left: 0.5em;
+  padding: 0.9em 15px;
+  position: relative;
+}
+
+HEADER .right UL LI:first-of-type { margin-left: 0; }
+
+HEADER .right UL LI A:link,
+HEADER .right UL LI A:visited {
+  color: #FFFFFF;
+}
+
+HEADER .right UL LI:hover > A,
+HEADER .right UL LI A:hover,
+HEADER .right UL LI A:active {
+  color: #F9EF57;
+}
+
+HEADER .right UL LI UL {
+  display: none;
+  margin-top: 0;
+  padding: 0.25em 15px;
+  font-weight: 500;
+  text-transform: none;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  background: #07161B;
+  text-align: left;
+}
+
+HEADER .right UL LI:hover UL {
   display: block;
 }
 
+HEADER .right UL LI UL LI {
+  margin: 0.25em 0;
+  padding: 0;
+}
 
+HEADER .right UL LI#menu-lookup {
+  position: static;
+  color: #F9EF57;
+}
 
+HEADER .right UL LI#menu-lookup.ml-active {
+  background: url(../images/grid-background.png) bottom right;
+}
+
+#toggle-lookup,
+#lookup { display: none; }
+
+#toggle-lookup + LABEL { cursor: pointer; }
+
+#lookup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background: url(../images/grid-background.png) top right;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+}
+
+#toggle-lookup:checked + LABEL + #lookup { display: block; }
+
+#find-part {
+  margin: 55px 30px;
+}
 
 #find-part-results {
   padding: 60px 0;
@@ -173,11 +257,31 @@ H2 {
 
 
 
+#home-hero {
+  padding: 288px 0 144px;
+  background: url(../images/home-header.jpg) center center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
 
-@media only screen and (max-width: 1024px) {
-  .site-width {
-    width: 96%;
-  }
+#home-hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .site-width { width: 96%; }
 }
 
 @media only screen and (max-width: 800px) {
