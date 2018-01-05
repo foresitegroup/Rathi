@@ -56,34 +56,47 @@ $PageClass = "home";
               <input type="checkbox" id="toggle-lookup" role="button">
               <label for="toggle-lookup">Elastomeric Product Lookup</label>
               <div id="lookup">
-                <form action="ajax-find-part.php" method="POST" id="find-part">
-                  <div>
-                    <select name="manufacturer" id="manufacturer">
-                      <option value="">Select Manufacturer...</option>
-                      <?php
-                      $manresult = $mysqli->query("SELECT * FROM products GROUP BY competitor ORDER BY competitor ASC");
+                <form action="ajax-find-part.php" method="POST" id="find-part" class="lookup-form">
+                  <div class="select-man">
+                    <label for="manufacturer">Manufacturer</label>
+                    <div class="select">
+                      <select name="manufacturer" id="manufacturer">
+                        <option value="">Select...</option>
+                        <?php
+                        $manresult = $mysqli->query("SELECT * FROM products GROUP BY competitor ORDER BY competitor ASC");
 
-                      while($manrow = $manresult->fetch_array(MYSQLI_ASSOC)) {
-                        echo '<option value="' . $manrow['competitor'] . '">' . $manrow['competitor'] . '</option>';
-                      }
+                        while($manrow = $manresult->fetch_array(MYSQLI_ASSOC)) {
+                          echo '<option value="' . $manrow['competitor'] . '">' . $manrow['competitor'] . '</option>';
+                        }
 
-                      $manresult->close();
-                      ?>
-                    </select>
-
-                    <select name="model" id="model">
-                      <option value="">Select Model...</option>
-                    </select>
-
-                    <select name="type-size" id="type-size">
-                      <option value="">Select Type/Size...</option>
-                    </select>
-
-                    <input type="submit" name="submit" value="Find My Part" id="find-my-part">
+                        $manresult->close();
+                        ?>
+                      </select>
+                    </div>
                   </div>
+                  
+                  <div class="select-mod">
+                    <label for="model">Model</label>
+                    <div class="select">
+                      <select name="model" id="model">
+                        <option value="">Select...</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="select-ts">
+                    <label for="type-size">Type/Size</label>
+                    <div class="select">
+                      <select name="type-size" id="type-size">
+                        <option value="">Select...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <button id="find-my-part" class="find-my-part">Find My Part</button>
                 </form>
 
-                <div id="find-part-results"></div>
+                <div id="find-part-results" class="find-part-results"></div>
               </div>
             </li>
           </ul>

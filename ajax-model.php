@@ -1,5 +1,5 @@
 <?php
-echo '<option value="">Select Model...</option>';
+echo '<option value="">Select...</option>';
 
 include_once "inc/fintoozler.php";
 

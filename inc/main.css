@@ -155,6 +155,7 @@ HEADER .right UL LI UL {
   position: absolute;
   top: 75%;
   left: 0;
+  z-index: 101;
   background: #07161B;
   text-align: left;
 }
@@ -194,64 +195,194 @@ HEADER .right UL LI#menu-lookup.ml-active {
 
 #toggle-lookup:checked + LABEL + #lookup { display: block; }
 
-#find-part {
-  margin: 55px 30px;
+#find-part { margin: 41px 30px 63px; }
+
+.lookup-form {
+  color: #F9EF57;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
-#find-part-results {
+.lookup-form .select-man {
+  display: inline-block;
+  width: 23.63%;
+  margin-right: 3%;
+}
+
+.lookup-form .select-mod {
+  display: inline-block;
+  width: 19.09%;
+  margin-right: 3%;
+}
+
+.lookup-form .select-ts {
+  display: inline-block;
+  width: 25%;
+  margin-right: 3%;
+}
+
+.lookup-form LABEL { display: block; padding-bottom: 0.5em; }
+
+.lookup-form .select {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  font-size: 28px;
+}
+
+.lookup-form .select.disabled:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+.lookup-form .select.disabled SELECT { cursor: default; }
+
+.lookup-form .select SELECT {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0 !important;
+  background: #FFFFFF;
+  background-image: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 0.7em;
+  color: #424242;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.lookup-form .select SELECT::-ms-expand { display: none; }
+
+.lookup-form .select::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: #A1A1A1 url(../images/select-arrow.png) no-repeat center center;
+  text-align: center;
+  pointer-events: none;
+}
+
+.lookup-form .select SELECT OPTION { text-transform: none; } /* Maybe some day.... */
+
+.find-my-part {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+  outline: none;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0.9em 1.1em 0.9em 1.2em;
+  background: #F9EF57;
+  color: #123C51;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.find-my-part:disabled { cursor: default; }
+
+.find-my-part:disabled:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+
+.find-part-results {
   padding: 60px 0;
   background: #FFFFFF;
   color: #8E8E8E;
   font-weight: 800;
+  font-size: 24px;
   letter-spacing: 0.23em;
   text-transform: uppercase;
   text-align: center;
 }
 
-#find-part-results.part-found {
-  background-image: linear-gradient(115deg, #FFFFFF 50%, #8ED2EE 50%);
+.find-part-results.part-found {
+  background-image: linear-gradient(115deg, #FFFFFF 47%, #8ED2EE 47%);
+  display: flex;
 }
 
-#find-part-results > DIV {
-  float: left;
-  width: 50%;
+.find-part-results > DIV { display: flex; align-items: center; }
+
+.find-part-results > DIV > DIV {
+  width: 25%;
+  line-height: 1.3em;
+}
+
+.find-part-results > DIV > DIV:first-of-type,
+.find-part-results > DIV > DIV:last-of-type {
+  width: 37.5%;
   box-sizing: border-box;
-  padding: 0 1em;
-}
-
-#find-part-results H1 {
-  margin: 0;
+  padding: 0 15px;
   color: #123C51;
   font-weight: 800;
-  font-size: 72px;
+  font-size: 43px;
+  line-height: 1.05em;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 22px rgba(0,0,0,0.38);
+  margin-bottom: 0.2em;
+}
+
+.find-part-results H1 {
+  margin: 0 0 0.15em;
+  color: #123C51;
+  font-weight: 800;
+  font-size: 60px;
   line-height: 1em;
   letter-spacing: 0.02em;
   text-shadow: 0 0 22px rgba(0,0,0,0.38);
 }
 
-#find-part-results.part-found H1 {
-  margin-top: 0.2em;
-  font-size: 50px;
-  line-height: 0.9em;
-}
-
-#find-part-results A:link,
-#find-part-results A:visited {
+.find-part-results A:link,
+.find-part-results A:visited {
   display: inline-block;
   margin-top: 1.5em;
   padding: 0.85em 2.4em;
   background: #F9EF57;
-  color: #123C51;
+  color: #123C51 !important;
   font-weight: 700;
   font-size: 27.56px;
   line-height: 1em;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.6);
 }
 
-#find-part-results A:hover,
-#find-part-results A:active {
+.find-part-results A:hover,
+.find-part-results A:active {
   background: #123C51;
-  color: #F9EF57;
+  color: #F9EF57 !important;
 }
 
 

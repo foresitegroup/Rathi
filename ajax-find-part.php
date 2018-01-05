@@ -10,21 +10,21 @@ if ($row['rathi_type_size'] != "") {
   <script type="text/javascript">
     $(document).ready(function() { $('#<?php echo $_POST['fpr_id']; ?>').addClass('part-found'); });
   </script>
-
+  
   <div>
-    Compare the
-    <h1><?php echo $row['competitor'] . "<br>" . $row['model'] . " " . $row['type_size']; ?></h1>
+    <div class="comp-part">
+      <?php echo $row['competitor'] . "<br>" . $row['model'] . " " . $row['type_size']; ?>
+    </div>
+    <div>Compare to our equivalent</div>
+    <div class="rathi-part">
+      Rathi<br><?php echo $row['model'] . " " . $row['rathi_type_size']; ?>
+    </div>
   </div>
-  <div>
-    to our equivalent
-    <h1>Rathi<br><?php echo $row['model'] . " " . $row['rathi_type_size']; ?></h1>
-  </div>
-  <div style="clear: both; width: 100%;"></div>
   <a href="#">See Rathi part details</a>
   <?php
 } else {
   ?>
-  <h1>No Part Found</h1>
+  <h1>No Equivalent Found</h1>
   Contact us for more information.<br>
   <a href="#">Contact a Rathi rep</a>
   <?php

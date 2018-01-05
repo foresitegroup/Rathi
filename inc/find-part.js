@@ -6,7 +6,10 @@ $(document).ready(function() {
   var id_fmp = $('#find-my-part');
   var id_fpr = $('#find-part-results');
   var fpr_id = 'find-part-results';
-
+  
+  // Disable fields
+  $(id_mod).closest('.select').addClass("disabled");
+  $(id_ts).closest('.select').addClass("disabled");
   $(id_mod).add(id_ts).add(id_fmp).prop('disabled', true);
   $(id_fpr).css('display', 'none');
 
@@ -24,8 +27,14 @@ $(document).ready(function() {
     
     $(id_fpr).css('display', 'none');
     $(id_mod).add(id_ts).add(id_fmp).prop('disabled', true);
+    $(id_mod).closest('.select').addClass("disabled");
+    $(id_ts).closest('.select').addClass("disabled");
     $(id_ts).val('');
-    if ($(this).val()) $(id_mod).prop('disabled', false);
+
+    if ($(this).val()) {
+      $(id_mod).prop('disabled', false);
+      $(id_mod).closest('.select').removeClass("disabled");
+    }
   });
 
   $(id_mod).change(function() {
@@ -38,7 +47,11 @@ $(document).ready(function() {
     
     $(id_fpr).css('display', 'none');
     $(id_ts).add(id_fmp).prop('disabled', true);
-    if ($(this).val()) $(id_ts).prop('disabled', false);
+    $(id_ts).closest('.select').addClass("disabled");
+    if ($(this).val()) {
+      $(id_ts).prop('disabled', false);
+      $(id_ts).closest('.select').removeClass("disabled");
+    }
   });
 
   $(id_ts).change(function() {
