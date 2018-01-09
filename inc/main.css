@@ -143,7 +143,7 @@ HEADER .right UL LI A:visited {
 HEADER .right UL LI:hover > A,
 HEADER .right UL LI A:hover,
 HEADER .right UL LI A:active {
-  color: #F9EF57;
+  color: #23AAE2;
 }
 
 HEADER .right UL LI UL {
@@ -174,6 +174,10 @@ HEADER .right UL LI#menu-lookup {
   color: #F9EF57;
 }
 
+HEADER .right UL LI#menu-lookup LABEL[for="toggle-lookup"]:hover {
+  color: #23AAE2;
+}
+
 HEADER .right UL LI#menu-lookup.ml-active {
   background: url(../images/grid-background.png) bottom right;
 }
@@ -193,9 +197,51 @@ HEADER .right UL LI#menu-lookup.ml-active {
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
 }
 
+#home-lookup {
+  background: url(../images/grid-background.png) top right;
+  padding: 45px 0 0;
+  position: relative;
+}
+
+#home-lookup:before {
+  content: url(../images/trim.png);
+  position: absolute;
+  top: 0;
+  left: calc(50% - 700px);
+  z-index: 5;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#home-lookup:after {
+  content: url(../images/trim.png);
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 700px);
+  z-index: 5;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+#home-lookup .site-width { position: relative; }
+
+#home-lookup H2 {
+  margin: 0 0 0.75em;
+  color: #23AAE2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 #toggle-lookup:checked + LABEL + #lookup { display: block; }
 
 #find-part { margin: 41px 30px 63px; }
+
+#home-find-part { margin-bottom: 100px; }
 
 .lookup-form {
   color: #F9EF57;
@@ -204,6 +250,7 @@ HEADER .right UL LI#menu-lookup.ml-active {
   line-height: 1em;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  position: relative;
 }
 
 .lookup-form .select-man {
@@ -221,7 +268,6 @@ HEADER .right UL LI#menu-lookup.ml-active {
 .lookup-form .select-ts {
   display: inline-block;
   width: 25%;
-  margin-right: 3%;
 }
 
 .lookup-form LABEL { display: block; padding-bottom: 0.5em; }
@@ -230,7 +276,7 @@ HEADER .right UL LI#menu-lookup.ml-active {
   position: relative;
   display: block;
   width: 100%;
-  height: 50px;
+  height: 45px;
   overflow: hidden;
   font-size: 28px;
 }
@@ -277,7 +323,7 @@ HEADER .right UL LI#menu-lookup.ml-active {
   top: 0;
   right: 0;
   width: 50px;
-  height: 50px;
+  height: 45px;
   background: #A1A1A1 url(../images/select-arrow.png) no-repeat center center;
   text-align: center;
   pointer-events: none;
@@ -287,8 +333,8 @@ HEADER .right UL LI#menu-lookup.ml-active {
 
 .find-my-part {
   position: absolute;
-  top: 55px;
-  right: 30px;
+  right: 0;
+  bottom: -5px;
   outline: none;
   border: 0;
   box-sizing: border-box;
@@ -319,12 +365,22 @@ HEADER .right UL LI#menu-lookup.ml-active {
   background: rgba(0,0,0,0.3);
 }
 
+.find-my-part:hover {
+  background: #23AAE2;
+  color: #F9EF57;
+}
+
+.find-my-part:hover:disabled {
+  background: #F9EF57;
+  color: #123C51;
+}
+
 .find-part-results {
   padding: 60px 0;
   background: #FFFFFF;
   color: #8E8E8E;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 0.23em;
   text-transform: uppercase;
   text-align: center;
@@ -336,6 +392,11 @@ HEADER .right UL LI#menu-lookup.ml-active {
 }
 
 .find-part-results > DIV { display: flex; align-items: center; }
+
+#home-find-part-results.find-part-results > DIV {
+  margin: 0 auto;
+  width: 1100px;
+}
 
 .find-part-results > DIV > DIV {
   width: 25%;
@@ -410,9 +471,31 @@ HEADER .right UL LI#menu-lookup.ml-active {
 
 
 
+@media only screen and (max-width: 1440px) {
+  #home-lookup:before { left: 2%; }
+  #home-lookup:after { right: 2%; }
+}
 
-@media only screen and (max-width: 1100px) {
-  .site-width { width: 96%; }
+@media only screen and (max-width: 1150px) {
+  .site-width,
+  HEADER .site-width,
+  #home-find-part-results.find-part-results > DIV { width: 96%; }
+
+  #logo { margin-left: 0; }
+
+  #find-part { margin: 41px 2% 63px; }
+}
+
+@media only screen and (max-width: 1000px) {
+  HEADER .right UL LI { margin-left: 0; }
+  
+  .lookup-form .select-man,
+  .lookup-form .select-mod,
+  .lookup-form .select-ts { width: 21.5%; }
+}
+
+@media only screen and (max-width: 900px) {
+
 }
 
 @media only screen and (max-width: 800px) {
