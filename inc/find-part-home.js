@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var id_lookup = $('#home-lookup');
   var id_fp = $('#home-find-part');
   var id_man = $('#home-manufacturer');
   var id_mod = $('#home-model');
@@ -11,7 +12,6 @@ $(document).ready(function() {
   $(id_mod).closest('.select').addClass("disabled");
   $(id_ts).closest('.select').addClass("disabled");
   $(id_mod).add(id_ts).add(id_fmp).prop('disabled', true);
-  $(id_fpr).css('display', 'none');
 
   var manufacturer;
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
       success: function(html) { $(id_mod).html(html); }
     });
     
-    $(id_fpr).css('display', 'none');
+    $(id_lookup).addClass('no-result');
     $(id_mod).add(id_ts).add(id_fmp).prop('disabled', true);
     $(id_mod).closest('.select').addClass("disabled");
     $(id_ts).closest('.select').addClass("disabled");
@@ -45,7 +45,7 @@ $(document).ready(function() {
       success: function(html) { $(id_ts).html(html); }
     });
     
-    $(id_fpr).css('display', 'none');
+    $(id_lookup).addClass('no-result');
     $(id_ts).add(id_fmp).prop('disabled', true);
     $(id_ts).closest('.select').addClass("disabled");
     if ($(this).val()) {
@@ -55,7 +55,8 @@ $(document).ready(function() {
   });
 
   $(id_ts).change(function() {
-    $(id_fpr).css('display', 'none').removeClass('part-found');
+    $(id_lookup).addClass('no-result');
+    $(id_fpr).removeClass('part-found');
     $(id_fmp).prop('disabled', true);
     if ($(this).val()) $(id_fmp).prop('disabled', false);
   });
@@ -69,7 +70,8 @@ $(document).ready(function() {
       data: $(id_fp).serialize() + '&fpr_id='+fpr_id+'&src=ajax'
     })
     .done(function(response) {
-      $(id_fpr).css('display', 'block').html(response);
+      $(id_lookup).removeClass('no-result');
+      $(id_fpr).html(response);
     });
   });
 });

@@ -40,9 +40,11 @@ $PageClass = "home";
 
         <div class="right">
           <div class="call">
-            Give us a call <span>1.281.690.0741</span>
+            Give us a call <span><a href="tel:12816900741">1.281.690.0741</a></span>
           </div>
-
+          
+          <input type="checkbox" id="toggle-menu" role="button">
+          <label for="toggle-menu"></label>
           <ul>
             <li>
               <a href="#">Couplings</a>
@@ -107,21 +109,34 @@ $PageClass = "home";
     <script type="text/javascript" src="inc/jquery.waypoints.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $("#waypoint-trigger").waypoint(function(direction) {
-          $(".home HEADER, #waypoint-trigger").toggleClass("sticky", direction == "down");
+        $("#home-lookup").waypoint(function(direction) {
+          $(".home HEADER, #waypoint-menu-spacer").toggleClass("sticky", direction == "down");
         });
       });
     </script>
 
+    <div id="waypoint-menu-spacer"></div>
+
     <div id="home-hero">
-      <div class="site-width" style="min-height: 500px;">
-        HERO CONTENT STARTS HERE
+      <div class="site-width">
+        <div class="text">
+          <h1>Global Quality Couplings.</h1>
+          Rathi North America offers a wide range of standard elastomeric and metallic couplings with time-tested, off-the-shelf designs. Local distribution and technical support is focused on serving OEMs, Distributors, and End User customers. Five decades of integrated manufacturing experience provide optimal quality and performance. Rathi’s operations are certified to ISO 9001:2008 International Standards for Quality Management, and the couplings comply with API, ISO, DIN, BS, IS, AGMA standards and provides ATEX certification.
+        </div>
+
+        <div class="couplings">
+          <div style="background-image: url(images/elastomeric-coupling.png);">
+            <a href="#">Elastomeric Couplings</a>
+          </div>
+
+          <div style="background-image: url(images/metallic-coupling.png);">
+            <a href="#">Metallic Couplings</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div id="waypoint-trigger"></div>
-    
-    <div id="home-lookup">
+    <div id="home-lookup" class="no-result">
       <div class="site-width">
         <h2>Elastomeric Product Lookup</h2>
 
@@ -171,7 +186,19 @@ $PageClass = "home";
       <div id="home-find-part-results" class="find-part-results"></div>
     </div>
 
-    <div style="width: 500px; height: 2000px; margin: 0 auto 2em; background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);">HELLO WORLD</div>
+    <div id="home-blog">
+      BLOG STUFF HERE
+    </div>
+
+    <footer>
+      <div class="site-width">
+        FOOTER
+      </div>
+    </footer>
+
+    <div id="copyright">
+      &copy; <?php echo date("Y"); ?> Rathi North America - All rights reserved.
+    </div>
     
   </body>
 </html>

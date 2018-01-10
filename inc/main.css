@@ -72,7 +72,7 @@ HEADER {
   border-bottom: 10px solid #23AAE2;
 }
 
-#waypoint-trigger.sticky { height: 190px; }
+#waypoint-menu-spacer.sticky { height: 165px; }
 
 HEADER .site-width {
   width: 1130px;
@@ -116,6 +116,11 @@ HEADER .right .call SPAN {
 
 HEADER .right .call SPAN A { color: #23AAE2; }
 
+#toggle-menu,
+LABEL[for="toggle-menu"] {
+  display: none;
+}
+
 HEADER .right UL {
   margin: 1.5em 0 0;
   padding: 0;
@@ -155,7 +160,7 @@ HEADER .right UL LI UL {
   position: absolute;
   top: 75%;
   left: 0;
-  z-index: 101;
+  z-index: 105;
   background: #07161B;
   text-align: left;
 }
@@ -191,7 +196,7 @@ HEADER .right UL LI#menu-lookup.ml-active {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 100;
+  z-index: 102;
   width: 100%;
   background: url(../images/grid-background.png) top right;
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
@@ -375,6 +380,10 @@ HEADER .right UL LI#menu-lookup.ml-active {
   color: #123C51;
 }
 
+#home-lookup:not(.no-result):after { content: ""; }
+
+#home-lookup.no-result .find-part-results { display: none; }
+
 .find-part-results {
   padding: 60px 0;
   background: #FFFFFF;
@@ -384,11 +393,22 @@ HEADER .right UL LI#menu-lookup.ml-active {
   letter-spacing: 0.23em;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
+}
+
+#home-lookup .find-part-results:after {
+  content: url(../images/trim.png);
+  position: absolute;
+  top: 0;
+  right: calc(50% - 700px);
+  z-index: 5;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .find-part-results.part-found {
   background-image: linear-gradient(115deg, #FFFFFF 47%, #8ED2EE 47%);
-  display: flex;
 }
 
 .find-part-results > DIV { display: flex; align-items: center; }
@@ -446,11 +466,8 @@ HEADER .right UL LI#menu-lookup.ml-active {
   color: #F9EF57 !important;
 }
 
-
-
-
 #home-hero {
-  padding: 288px 0 144px;
+  padding: 240px 0 125px;
   background: url(../images/home-header.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
@@ -468,12 +485,143 @@ HEADER .right UL LI#menu-lookup.ml-active {
   background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
+#home-hero .text {
+  display: inline-block;
+  vertical-align: top;
+  width: 53%;
+  margin-right: 10%;
+  box-sizing: border-box;
+  padding: 4% 3% 4% 4%;
+  background: rgba(0,20,40,0.9);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.75em;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+#home-hero .text:before {
+  content: url(../images/trim.png);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 13px;
+  line-height: 13px;
+}
+
+#home-hero .text:after {
+  content: url(../images/trim.png);
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  height: 13px;
+  line-height: 13px;
+}
+
+#home-hero .text H1 {
+  margin: 0 0 0.2em;
+  color: #23AAE2;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+#home-hero .couplings {
+  display: inline-block;
+  vertical-align: top;
+  width: 35.63%;
+}
+
+#home-hero .couplings > DIV {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+#home-hero .couplings > DIV:before {
+  display: block;
+  content: "";
+  padding-top: 63.77%;
+}
+
+#home-hero .couplings > DIV:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle closest-side, rgba(255,255,255,1), transparent);
+}
+
+#home-hero .couplings > DIV:first-of-type { background-size: auto 90%; }
+#home-hero .couplings > DIV:last-of-type { background-size: 85% auto; margin-top: 1em; }
+
+#home-hero .couplings A:link,
+#home-hero .couplings A:visited {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: 1.2em 1em 1em;
+  background: #F9EF57;
+  color: #123C51;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 0 22px 0 rgba(0,0,0,0.55);
+  white-space: nowrap;
+}
+
+#home-hero .couplings A:after {
+  content: "\f0da";
+  font-family: "FontAwesome";
+  padding-left: 0.5em;
+}
+
+#home-hero .couplings A:hover,
+#home-hero .couplings A:active {
+  background: #123C51;
+  color: #F9EF57;
+}
+
+
+
+
+#copyright {
+  background: #222222;
+  padding: 4em 0;
+  color: #D2D2D2;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 
 
 
 @media only screen and (max-width: 1440px) {
   #home-lookup:before { left: 2%; }
-  #home-lookup:after { right: 2%; }
+  #home-lookup:after,
+  #home-lookup .find-part-results:after { right: 2%; }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -484,6 +632,17 @@ HEADER .right UL LI#menu-lookup.ml-active {
   #logo { margin-left: 0; }
 
   #find-part { margin: 41px 2% 63px; }
+
+  .find-part-results { font-size: 1.9vw; }
+
+  .find-part-results > DIV > DIV:first-of-type,
+  .find-part-results > DIV > DIV:last-of-type {
+    font-size: 189%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #home-hero .text H1 { font-size: 6.5vw; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -495,21 +654,198 @@ HEADER .right UL LI#menu-lookup.ml-active {
 }
 
 @media only screen and (max-width: 900px) {
+  HEADER .right { margin-top: 20px; width: 59%; }
 
+  HEADER .right UL { margin-top: 0.9em; text-align: right; }
+
+  HEADER .right UL LI:first-of-type,
+  HEADER .right UL LI:nth-of-type(2) { padding-bottom: 0.2em; }
+
+  HEADER .right UL LI UL { top: 100%; }
+
+  #menu-lookup { text-align: left; }
+
+  .find-my-part { font-size: 2.2vw; bottom: 0; min-height: 49px; }
 }
 
 @media only screen and (max-width: 800px) {
-  /* Small computer or landscape tablet */
+  #home-hero .text { width: 100%; margin-right: 0; }
+
+  #home-hero .text H1 { font-size: 8.8vw; }
+
+  #home-hero .couplings { width: 100%; }
+
+  #home-hero .couplings > DIV {
+    margin-top: 2em;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
+  #home-hero .couplings > DIV:last-of-type { margin-top: 2em; }
+
+  #home-hero .couplings A:link,
+  #home-hero .couplings A:visited {
+    font-size: 1.75vw;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-  /* Tablet */
+@media only screen and (max-width: 700px) {
+  HEADER .site-width { position: static; }
+
+  #logo { position: relative; z-index: 101; margin-bottom: 15px; }
+
+  HEADER .right .call { margin-top: 10px; padding-right: 0; position: relative; z-index: 101; }
+
+  LABEL[for="toggle-menu"] {
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 49px;
+    height: auto;
+    line-height: 1em;
+    position: absolute;
+    right: 4%;
+    bottom: 15px;
+    z-index: 101;
+  }
+
+  LABEL[for="toggle-menu"]:after {
+    font-family: "FontAwesome";
+    content: "\f0c9";
+  }
+
+  #toggle-menu:checked + LABEL[for="toggle-menu"]:after {
+    content: "\f00d";
+  }
+
+  #toggle-menu + LABEL + UL {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background: rgba(7, 22, 27, 0.9);
+    margin-top: 0;
+    text-align: center;
+    font-size: 5vw;
+    border-bottom: 10px solid #23AAE2;
+    box-sizing: border-box;
+  }
+
+  #toggle-menu:checked + LABEL + UL {
+    display: block;
+  }
+
+  #toggle-menu + LABEL + UL LI {
+    display: block;
+    margin: 0;
+    padding: 0.5em 15px;
+  }
+
+  #toggle-menu + LABEL + UL > LI:first-of-type {
+    margin-top: 160px;
+  }
+
+  #toggle-menu + LABEL + UL LI#menu-lookup {
+    text-align: center;
+    position: relative;
+  }
+
+  #toggle-menu + LABEL + UL LI A { display: block; }
+
+  #toggle-menu + LABEL + UL LI UL {
+    display: block;
+    position: static;
+    background: transparent;
+    text-align: center;
+    padding: 0;
+  }
+
+  #lookup { text-align: left; }
+
+  .lookup-form .select-man,
+  .lookup-form .select-mod,
+  .lookup-form .select-ts {
+    width: 29.4%;
+    margin: 0 1.5%;
+  }
+
+  .find-my-part {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    min-height: 0;
+    font-size: 21px;
+    margin: 1em auto 0;
+    display: block;
+  }
+
+  #toggle-menu + LABEL + UL LI .find-part-results A { display: inline-block; }
+
+  #home-lookup H2 { font-size: 5vw; }
 }
 
 @media only screen and (max-width: 600px) {
-  /* Small tablet */
+  HEADER .right { width: 48%; }
+  HEADER .right .call { font-size: 3vw; }
+
+  .lookup-form .select-man,
+  .lookup-form .select-mod,
+  .lookup-form .select-ts {
+    margin: 0;
+    width: 30.2%;
+  }
+  .lookup-form .select-mod { margin: 0 3%; }
+
+  .find-part-results { font-size: 4vw; }
+
+  .find-part-results > DIV { display: block; }
+
+  .find-part-results > DIV > DIV { width: 100%; padding: 1em 0; }
+
+  .find-part-results > DIV > DIV:first-of-type,
+  .find-part-results > DIV > DIV:last-of-type {
+    width: 100%;
+    padding: 0;
+    font-size: 200%;
+  }
+
+  .find-part-results A:link,
+  .find-part-results A:visited {
+    font-size: 4vw;
+    padding: 0.85em 2em;
+  }
+
+  #home-lookup H2 { margin-bottom: 1.5em; }
 }
 
 @media only screen and (max-width: 480px) {
-  /* Phone */
+  HEADER .right { width: 36%; }
+  HEADER .right .call { font-size: 3.5vw; text-align: right; }
+  HEADER .right .call SPAN { font-size: 120%; display: block; }
+
+  .lookup-form .select-man,
+  .lookup-form .select-mod,
+  .lookup-form .select-ts {
+    margin: 0 0 2.5em;
+    width: 100%;
+  }
+
+  .find-my-part { margin-top: 0; }
+
+  #home-hero .text { font-size: 16px; }
+
+  #home-hero .text:before { left: 2%; }
+  #home-hero .text:after { right: 2%; }
+
+  #home-hero .text H1 { font-size: 12.8vw; }
+
+  #home-hero .couplings > DIV { width: 100%; }
+
+  #home-hero .couplings A:link,
+  #home-hero .couplings A:visited {
+    font-size: 3.5vw;
+  }
 }
