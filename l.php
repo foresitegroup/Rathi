@@ -1,5 +1,5 @@
 <?php
-$PageTitle = "Elastomeric Coupling - Staright Jaw / SWQ Type";
+$PageTitle = "Elastomeric Coupling - Staright Jaw / L Type";
 include "header.php";
 ?>
 
@@ -7,28 +7,28 @@ include "header.php";
   <div class="product-header">
     <div class="site-width">
       <h2>Elastomeric Coupling</h2>
-      <h1>Straight Jaw / SWQ Type</h1>
-      Straight Jaw with Radially Removable Split Wrap and Flange Adapters
-      <em>Compare to Lovejoy&reg; RRC Type</em>
+      <h1>Straight Jaw / L Type</h1>
+      Standard Straight Jaw Design
+      <em>Compare to Lovejoy&reg; L Type</em>
     </div>
   </div>
 
   <div class="site-width">
     <div class="left">
-      <h3>Special Features</h3>
-      Provides quick, easy disconnection from driving unit without disturbing drive shaft or piping, permits removal of equipment from line in three simple steps. Only two sets of bolts need to be removed.<br>
-      <br>
-
-      <h3>Applications</h3>
-      For pumps in chemical industry, ideal for reciprocating pumps, diesel or gas engines, multiple generator sets and other drives where rapid disconnection without disturbing the drive or driven unit is required.
+      <ul>
+        <li>Industry Standard design</li>
+        <li>Three elastomeric material options</li>
+        <li>Torque ratings from 3.4 in-lbs to over 40,000 in-lbs</li>
+      </ul>
     </div>
 
     <div class="right">
       <script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
       <script type="text/javascript" src="inc/jquery.cycle2.carousel.min.js"></script>
-      
+
       <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-carousel-visible="1" data-cycle-carousel-fluid="true" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-pager="#pager,#number-pager" data-cycle-pager-template="<a href='#'>{{slideNum}}</a>">
-        <div style="background-image: url(images/swq-fig1.jpg);"></div>
+        <div style="background-image: url(images/l-fig1.jpg);"></div>
+        <div style="background-image: url(images/l-fig2.jpg);"></div>
 
         <p id="pager"></p>
         <p id="number-pager"></p>
@@ -36,7 +36,7 @@ include "header.php";
 
       <a href="#" id="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
       <a href="#" id="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-      
+
       <script type="text/javascript">
         $(document).ready(function() {
           var slideCount = $('.cycle-slideshow').data('cycle.opts').slideCount;
@@ -47,7 +47,7 @@ include "header.php";
           } else {
             $('#number-pager').prepend('Fig ').append(' / ' + slideCount);
           }
-          
+
           var paddingTop = parseInt($('.product-header-half .right').css('padding-top'));
           var slideHeight = $('.cycle-slideshow .cycle-carousel-wrap').height() / 2;
           var topValue = slideHeight + paddingTop + 'px';
@@ -109,9 +109,9 @@ include "header.php";
         }
       });
     </script>
-    
+
     <div class="system-toggle">
-      Units: 
+      Units:
       <a href="#" class="convertimp">Imperial</a> / <a href="#" class="convertmet">Metric</a>
     </div>
 
@@ -137,8 +137,8 @@ include "header.php";
           <td>SWQ 095</td>
           <td class="convertrpm">0.22</td>
           <td rowspan="6" class="rowspan">
-            <span class="convert1">100</span>, 
-            <span class="convert1">140</span>, 
+            <span class="convert1">100</span>,
+            <span class="convert1">140</span>,
             <span class="convert1">180</span>
           </td>
           <td class="convert">10</td>
@@ -202,7 +202,7 @@ include "header.php";
           <td>SWQ 226</td>
           <td class="convertrpm">3.43</td>
           <td rowspan="7" class="rowspan blue">
-            <span class="convert1">140</span>, 
+            <span class="convert1">140</span>,
             <span class="convert1">180</span>
           </td>
           <td class="convert">25</td>

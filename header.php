@@ -37,7 +37,7 @@ include "inc/fintoozler.php";
       <div class="site-width">
         <a href="." id="logo"><img src="images/logo.png" alt="Rathi North America"></a>
 
-        <div class="right">
+        <div class="header-right">
           <div class="call">
             Give us a call <span><a href="tel:12816900741">1.281.690.0741</a></span>
           </div>

@@ -15,12 +15,12 @@ if ($row['rathi_type_size'] != "") {
     <div class="comp-part">
       <?php echo $row['competitor'] . "<br>" . $row['model'] . " " . $row['type_size']; ?>
     </div>
-    <div>Compare to our equivalent</div>
+    <div>Compare to our</div>
     <div class="rathi-part">
       Rathi<br><?php echo $row['model'] . " " . $row['rathi_type_size']; ?>
     </div>
   </div>
-  <a href="#">See Rathi part details</a>
+  <a href="<?php echo strtolower($row['type']); ?>.php">See Rathi part details</a>
   <?php
 } else {
   ?>
