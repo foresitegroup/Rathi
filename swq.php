@@ -1,5 +1,5 @@
 <?php
-$PageTitle = "Elastomeric Coupling - Staright Jaw / SWQ Type";
+$PageTitle = "Elastomeric Coupling - Straight Jaw / SWQ Type";
 include "header.php";
 ?>
 
@@ -64,58 +64,14 @@ include "header.php";
   <div class="site-width">
     <h3>Details &amp; Specs</h3>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.convertimp').addClass('inactive');
-        convertTo('imp');
+    <script type="text/javascript" src="inc/scale-convert.js"></script>
 
-        $('.convertimp').click(function(event){
-          event.preventDefault();
-          convertTo('imp');
-          $('.convertimp').addClass('inactive');
-          $('.convertmet').removeClass('inactive');
-        });
-
-        $('.convertmet').click(function(event){
-          event.preventDefault();
-          convertTo('met');
-          $('.convertmet').addClass('inactive');
-          $('.convertimp').removeClass('inactive');
-        });
-
-        function convertTo(system) {
-          $('.convert,.convert1').each(function() {
-            var multiplier = (system == 'imp') ? 0.0393700787401575 : 25.4;
-            var dec = (system == 'imp') ? 2 : 0;
-            var newVal = (parseFloat($(this).text()) * multiplier).toFixed(dec);
-            $(this).text(newVal);
-          });
-
-          $('.convertrpm').each(function() {
-            var multiplier = (system == 'imp') ? 1.34102 : 0.7457;
-            var newVal = (parseFloat($(this).text()) * multiplier).toFixed(2);
-            $(this).text(newVal);
-          });
-
-          $('.scale,.scalerpm').each(function() {
-            var newVal;
-            if (system == 'imp') {
-              newVal = ($(this).attr("class") == 'scalerpm') ? 'HP' : 'in';
-            } else {
-              newVal = ($(this).attr("class") == 'scalerpm') ? 'kW' : 'mm';
-            }
-            $(this).text(newVal);
-          });
-        }
-      });
-    </script>
-    
     <div class="system-toggle">
       Units: 
       <a href="#" class="convertimp">Imperial</a> / <a href="#" class="convertmet">Metric</a>
     </div>
 
-    <table>
+    <table class="nine">
       <thead>
         <tr>
           <th rowspan="2">Coupling Size</th>
@@ -137,9 +93,9 @@ include "header.php";
           <td>SWQ 095</td>
           <td class="convertrpm">0.22</td>
           <td rowspan="6" class="rowspan">
-            <span class="convert1">100</span>, 
-            <span class="convert1">140</span>, 
-            <span class="convert1">180</span>
+            <span class="convert">100</span>, 
+            <span class="convert">140</span>, 
+            <span class="convert">180</span>
           </td>
           <td class="convert">10</td>
           <td class="convert">28</td>
@@ -202,8 +158,8 @@ include "header.php";
           <td>SWQ 226</td>
           <td class="convertrpm">3.43</td>
           <td rowspan="7" class="rowspan blue">
-            <span class="convert1">140</span>, 
-            <span class="convert1">180</span>
+            <span class="convert">140</span>, 
+            <span class="convert">180</span>
           </td>
           <td class="convert">25</td>
           <td class="convert">70</td>
