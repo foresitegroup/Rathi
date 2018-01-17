@@ -7,7 +7,7 @@ include "header.php";
   <div class="product-header">
     <div class="site-width">
       <h2>Elastomeric Coupling</h2>
-      <h1>Straight Jaw / H and HR Types</h1>
+      <h1>Straight Jaw / H &amp; HR Types</h1>
       Straight Jaw with Individual Flexing Inserts and Collars
       <em>Compare to Lovejoy&reg; H Type</em>
     </div>
@@ -58,7 +58,7 @@ include "header.php";
         });
       </script>
 
-      <a href="pdf/L-SW-RRS_Spec_Sheet.pdf" class="specsheet">Download Spec Sheet <i class="fa fa-download" aria-hidden="true"></i></a>
+      <!-- <a href="" class="specsheet">Download Spec Sheet <i class="fa fa-download" aria-hidden="true"></i></a> -->
     </div>
   </div>
 </div>
@@ -206,6 +206,198 @@ include "header.php";
           <td class="convert">180</td>
           <td class="convert">76</td>
           <td class="convert">95</td>
+        </tr>
+        <tr>
+          <td>HR-367</td>
+          <td class="convertrpm">104</td>
+          <td class="convertrpm">156</td>
+          <td class="convertrpm">260</td>
+          <td class="convert">117</td>
+          <td class="convert">40</td>
+          <td class="convert">70</td>
+          <td class="convert">100</td>
+          <td class="convert">130</td>
+          <td class="convert">317</td>
+          <td class="convert">162</td>
+          <td class="convert">210</td>
+          <td class="convert">84</td>
+          <td class="convert">105</td>
+        </tr>
+        <tr>
+          <td>HR-407</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">223</td>
+          <td class="convertrpm">372</td>
+          <td class="convert">126</td>
+          <td class="convert">50</td>
+          <td class="convert">85</td>
+          <td class="convert">120</td>
+          <td class="convert">155</td>
+          <td class="convert">349</td>
+          <td class="convert">195</td>
+          <td class="convert">248</td>
+          <td class="convert">95</td>
+          <td class="convert">120</td>
+        </tr>
+        <tr>
+          <td>HR-457</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">302</td>
+          <td class="convertrpm">502</td>
+          <td class="convert">134</td>
+          <td class="convert">60</td>
+          <td class="convert">85</td>
+          <td class="convert">140</td>
+          <td class="convert">185</td>
+          <td class="convert">400</td>
+          <td class="convert">220</td>
+          <td class="convert">294</td>
+          <td class="convert">100</td>
+          <td class="convert">130</td>
+        </tr>
+        <tr>
+          <td>HR-509</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">358</td>
+          <td class="convertrpm">597</td>
+          <td class="convert">133</td>
+          <td class="convert">70</td>
+          <td class="convert">90</td>
+          <td class="convert">145</td>
+          <td class="convert">190</td>
+          <td class="convert">412</td>
+          <td class="convert">230</td>
+          <td class="convert">305</td>
+          <td class="convert">110</td>
+          <td class="convert">140</td>
+        </tr>
+        <tr>
+          <td>HR-609</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">527</td>
+          <td class="convertrpm">877</td>
+          <td class="convert">142</td>
+          <td class="convert">85</td>
+          <td class="convert">100</td>
+          <td class="convert">170</td>
+          <td class="convert">225</td>
+          <td class="convert">461</td>
+          <td class="convert">275</td>
+          <td class="convert">360</td>
+          <td class="convert">130</td>
+          <td class="convert">170</td>
+        </tr>
+        <tr>
+          <td>HR-709</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">738</td>
+          <td class="convertrpm">1230</td>
+          <td class="convert">162</td>
+          <td class="convert">90</td>
+          <td class="convert">100</td>
+          <td class="convert">190</td>
+          <td class="convert">265</td>
+          <td class="convert">524</td>
+          <td class="convert">300</td>
+          <td class="convert">425</td>
+          <td class="convert">140</td>
+          <td class="convert">195</td>
+        </tr>
+        <tr>
+          <td>HR-809</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">1530</td>
+          <td class="convert">196</td>
+          <td class="convert">100</td>
+          <td class="convert">120</td>
+          <td class="convert">215</td>
+          <td class="convert">295</td>
+          <td class="convert">600</td>
+          <td class="convert">345</td>
+          <td class="convert">470</td>
+          <td class="convert">155</td>
+          <td class="convert">210</td>
+        </tr>
+        <tr>
+          <td>HR-911</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">1770</td>
+          <td class="convert">216</td>
+          <td class="convert">110</td>
+          <td class="convert">170</td>
+          <td class="convert">265</td>
+          <td class="convert">340</td>
+          <td class="convert">667</td>
+          <td class="convert">420</td>
+          <td class="convert">545</td>
+          <td class="convert">190</td>
+          <td class="convert">240</td>
+        </tr>
+        <tr>
+          <td>HR-1013</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">2644</td>
+          <td class="convert">218</td>
+          <td class="convert">195</td>
+          <td class="convert"></td>
+          <td class="convert">360</td>
+          <td class="convert"></td>
+          <td class="convert">805</td>
+          <td class="convert">540</td>
+          <td class="convert"></td>
+          <td class="convert">340</td>
+          <td class="convert"></td>
+        </tr>
+        <tr>
+          <td>HR-1015</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">3665</td>
+          <td class="convert">235</td>
+          <td class="convert">215</td>
+          <td class="convert"></td>
+          <td class="convert">420</td>
+          <td class="convert"></td>
+          <td class="convert">910</td>
+          <td class="convert">630</td>
+          <td class="convert"></td>
+          <td class="convert">340</td>
+          <td class="convert"></td>
+        </tr>
+        <tr>
+          <td>HR-1115</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">4450</td>
+          <td class="convert">245</td>
+          <td class="convert">240</td>
+          <td class="convert"></td>
+          <td class="convert">500</td>
+          <td class="convert"></td>
+          <td class="convert">960</td>
+          <td class="convert">750</td>
+          <td class="convert"></td>
+          <td class="convert">375</td>
+          <td class="convert"></td>
+        </tr>
+        <tr>
+          <td>HR-1117</td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm"></td>
+          <td class="convertrpm">6807</td>
+          <td class="convert">276</td>
+          <td class="convert">290</td>
+          <td class="convert"></td>
+          <td class="convert">600</td>
+          <td class="convert"></td>
+          <td class="convert">1170</td>
+          <td class="convert">900</td>
+          <td class="convert"></td>
+          <td class="convert">400</td>
+          <td class="convert"></td>
         </tr>
       </tbody>
     </table>
