@@ -28,6 +28,7 @@ include "header.php";
 
       <div class="cycle-slideshow" data-cycle-fx="carousel" data-cycle-timeout="0" data-cycle-slides="> div" data-cycle-carousel-visible="1" data-cycle-carousel-fluid="true" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-pager="#pager,#number-pager" data-cycle-pager-template="<a href='#'>{{slideNum}}</a>">
         <div style="background-image: url(images/sw-fig1.jpg);"></div>
+        <div style="background-image: url(images/sw-fig2.jpg);"></div>
 
         <p id="pager"></p>
         <p id="number-pager"></p>

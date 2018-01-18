@@ -36,7 +36,7 @@ A:hover, A:active {
   text-decoration: none;
 }
 
-UL {
+UL, OL {
   margin: 0 0 0 0.75em;
   padding: 0 0 0 0.75em;
 }
@@ -1019,6 +1019,12 @@ FOOTER .social A[href^="tel:"]:active {
   text-transform: uppercase;
 }
 
+.product-details .system-toggle.nudge {
+  -webkit-transform: translateY(70%);
+  -ms-transform: translateY(70%);
+  transform: translateY(70%);
+}
+
 .product-details .system-toggle A.inactive {
   pointer-events: none;
 }
@@ -1039,6 +1045,7 @@ FOOTER .social A[href^="tel:"]:active {
 .product-details TABLE {
   border: 1px solid #777D80;
   border-collapse: collapse;
+  width: 100%;
 }
 
 .product-details TABLE TH {
@@ -1052,6 +1059,7 @@ FOOTER .social A[href^="tel:"]:active {
   line-height: 1.2em;
 }
 
+.product-details TABLE.five TH { width: 20%; }
 .product-details TABLE.six TH { width: 16.66%; }
 .product-details TABLE.nine TH { width: 11.11%; }
 .product-details TABLE.eleven TH { width: 9.09%; }
@@ -1059,6 +1067,10 @@ FOOTER .social A[href^="tel:"]:active {
 .product-details TABLE.fifteen TH { width: 6.66%; font-size: 12px; }
 .product-details TABLE.seventeen TH { width: 5.88%; font-size: 10px; }
 .product-details TABLE.eighteen TH { width: 5.55%; font-size: 10px; }
+.product-details TABLE.nineteen TH { width: 5.26%; font-size: 10px; }
+
+.product-details TABLE.text-six TH { width: 10%; }
+.product-details TABLE.text-six TH.text { width: 40%; padding: 0.7em 0.9em; text-align: left; }
 
 .product-details TABLE TH.blue { background: #23AAE2; }
 
@@ -1076,11 +1088,14 @@ FOOTER .social A[href^="tel:"]:active {
 
 .product-details TABLE.seventeen TD { font-size: 13px; }
 .product-details TABLE.eighteen TD { font-size: 13px; }
+.product-details TABLE.nineteen TD { font-size: 13px; }
 
 .product-details TABLE TD.rowspan { vertical-align: top; }
 .product-details TABLE TD.blue { background: #D3EDF4; }
 
 .product-details TABLE TD.text { width: 40%; padding: 0.7em 0.9em; text-align: left; }
+
+.product-details TABLE.text-six TD.text { padding: 0.7em 0.9em; text-align: left; }
 
 .product-details H4 {
   margin: 0;
@@ -1090,6 +1105,17 @@ FOOTER .social A[href^="tel:"]:active {
   font-size: 18px;
   line-height: 1em;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.product-details H5 {
+  margin: 0;
+  color: #123C51;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -1195,6 +1221,8 @@ FOOTER .social A[href^="tel:"]:active {
 
   .product-details TABLE.eleven TH { font-size: 1.44vw; }
   .product-details TABLE.eleven TD { font-size: 1.65vw; }
+  .product-details TABLE.nineteen TH { font-size: 1.1vw; }
+  .product-details TABLE.nineteen TD { font-size: 1.44vw; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1235,6 +1263,9 @@ FOOTER .social A[href^="tel:"]:active {
   
   .product-details TABLE.nine TH { font-size: 1.5vw; }
   .product-details TABLE.nine TD { font-size: 1.75vw; }
+
+  .product-details TABLE.text-six TH { font-size: 1.6vw; }
+  .product-details TABLE.text-six TD { font-size: 1.85vw; }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1429,5 +1460,11 @@ FOOTER .social A[href^="tel:"]:active {
   #home-hero .couplings A:link,
   #home-hero .couplings A:visited {
     font-size: 3.5vw;
+  }
+
+  .product-details .system-toggle.nudge {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
