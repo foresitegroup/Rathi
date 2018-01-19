@@ -87,5 +87,23 @@ $(document).ready(function() {
 
         $(this).text(newVal);
       });
+
+      $('.sepconvert').each(function() {
+        if ($(this).text() != '') {
+          var multiplier, decimel;
+
+          multiplier = (system == 'imp') ? 0.0393700787401575 : 25.4;
+          var sepdecfinal = (typeof sepdec !== 'undefined') ? sepdec : 2;
+          var sepdecmfinal = (typeof sepdecm !== 'undefined') ? sepdecm : 0;
+          decimel = (system == 'imp') ? sepdecfinal : sepdecmfinal;
+
+          if ($(this).attr('data-orig') && system == 'met') {
+            $(this).text($(this).attr('data-orig'));
+          } else {
+            var newVal = (parseFloat($(this).text()) * multiplier).toFixed(decimel);
+            $(this).text(newVal);
+          }
+        }
+      });
     }
 });

@@ -68,7 +68,7 @@ include "header.php";
   <div class="site-width">
     <h3>Details &amp; Specs</h3>
     
-    <script type="text/javascript">var wdecm = 2;</script>
+    <script type="text/javascript">var wdecm = 2; var sepdec = 3;</script>
     <script type="text/javascript" src="inc/scale-convert.js"></script>
 
     <div class="system-toggle nudge">
@@ -774,6 +774,154 @@ include "header.php";
           <td><span class="converttemp">-40</span>&deg;<span class="scaletemp">C</span> to <span class="converttemp">90</span>&deg;<span class="scaletemp">C</span></td>
           <td><span class="converttemp">-40</span>&deg;<span class="scaletemp">C</span> to <span class="converttemp">90</span>&deg;<span class="scaletemp">C</span></td>
           <td><span class="converttemp">-40</span>&deg;<span class="scaletemp">C</span> to <span class="converttemp">90</span>&deg;<span class="scaletemp">C</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h4>Misalignment Data</h4>
+    <table class="text-ten">
+      <thead>
+        <tr>
+          <th class="text">Size</th>
+          <th>RRJ 19</th>
+          <th>RRJ 24</th>
+          <th>RRJ 28</th>
+          <th>RRJ 38</th>
+          <th>RRJ 42</th>
+          <th>RRJ 48</th>
+          <th>RRJ 55</th>
+          <th>RRJ 65</th>
+          <th>RRJ 75</th>
+          <th>RRJ 90</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text">Maximum axial displacement (<span class="scale">mm</span>)</td>
+          <td class="sepconvert" data-orig="1.6">1.6</td>
+          <td class="sepconvert" data-orig="1.8">1.8</td>
+          <td class="sepconvert" data-orig="2">2</td>
+          <td class="sepconvert" data-orig="2.2">2.2</td>
+          <td class="sepconvert" data-orig="2.3">2.3</td>
+          <td class="sepconvert" data-orig="3">3</td>
+          <td class="sepconvert" data-orig="3">3</td>
+          <td class="sepconvert" data-orig="3.5">3.5</td>
+          <td class="sepconvert" data-orig="3.5">3.5</td>
+          <td class="sepconvert" data-orig="4.5">4.5</td>
+        </tr>
+        <tr>
+          <td class="text">Maximum radial misalignment (<span class="scale">mm</span>)</td>
+          <td class="sepconvert" data-orig="0.15">0.15</td>
+          <td class="sepconvert" data-orig="0.2">0.2</td>
+          <td class="sepconvert" data-orig="0.2">0.2</td>
+          <td class="sepconvert" data-orig="0.25">0.25</td>
+          <td class="sepconvert" data-orig="0.3">0.3</td>
+          <td class="sepconvert" data-orig="0.35">0.35</td>
+          <td class="sepconvert" data-orig="0.35">0.35</td>
+          <td class="sepconvert" data-orig="0.4">0.4</td>
+          <td class="sepconvert" data-orig="0.45">0.45</td>
+          <td class="sepconvert" data-orig="0.5">0.5</td>
+        </tr>
+        <tr>
+          <td class="text">Maximum angular misalignment (Deg.)</td>
+          <td>0.80</td>
+          <td>0.80</td>
+          <td>0.80</td>
+          <td>0.90</td>
+          <td>0.90</td>
+          <td>1.00</td>
+          <td>1.00</td>
+          <td>1.00</td>
+          <td>1.10</td>
+          <td>1.10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h4>Application Service Factor</h4>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Driven Machine</th>
+          <th rowspan="2">Electric Motors</th>
+          <th colspan="2">Prime Motor</th>
+        </tr>
+        <tr>
+          <th class="blue">4 Cyl or more</th>
+          <th class="blue">Less than 4 Cyl</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text">a) Uniform operation; no shocks</td>
+          <td>1.5</td>
+          <td>2.0</td>
+          <td>2.5</td>
+        </tr>
+        <tr>
+          <td class="text">b) Irregular operation; light shocks</td>
+          <td>2.0</td>
+          <td>2.5</td>
+          <td>3.0</td>
+        </tr>
+        <tr>
+          <td class="text">c) Irregular operation; medium shocks</td>
+          <td>2.5</td>
+          <td>3.0</td>
+          <td>3.5</td>
+        </tr>
+        <tr>
+          <td class="text">d) Irregular operation; heavy shocks</td>
+          <td>3.0</td>
+          <td>3.5</td>
+          <td>4.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h4>Application Service Factor for Temperature and Starting Frequency</h4>
+    <table class="four">
+      <thead>
+        <tr>
+          <th>Temp Range (deg <span class="scaletemp">C</span>)</th>
+          <th>< <span class="converttemp">30</span>&deg;<span class="scaletemp">C</span></th>
+          <th><span class="converttemp">30</span> - <span class="converttemp">70</span>&deg;<span class="scaletemp">C</span></th>
+          <th>> <span class="converttemp">70</span>&deg;<span class="scaletemp">C</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SF2</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <br>
+
+    <table class="four">
+      <thead>
+        <tr>
+          <th>Starting frequency cycles / hour</th>
+          <th>< 100</th>
+          <th>100 - 500</th>
+          <th>> 500</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SF3</td>
+          <td>1</td>
+          <td>1.5</td>
+          <td>2</td>
         </tr>
       </tbody>
     </table>
