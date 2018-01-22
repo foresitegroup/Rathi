@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
 
     function convertTo(system) {
-      $('.convert,.convertrpm,.convertt,.convertw,.converti').each(function() {
+      $('.convert,.convertrpm,.convertt,.convertkt,.convertw,.converti,.convertst').each(function() {
         if ($(this).text() != '') {
           var multiplier, decimel;
 
@@ -34,6 +34,12 @@ $(document).ready(function() {
               var tdecmfinal = (typeof tdecm !== 'undefined') ? tdecm : 0;
               decimel = (system == 'imp') ? tdecfinal : tdecmfinal;
               break;
+            case 'convertkt':
+              multiplier = (system == 'imp') ? 8850.7457673787 : 0.00011298482933333;
+              var ktdecfinal = (typeof ktdec !== 'undefined') ? ktdec : 0;
+              var ktdecmfinal = (typeof ktdecm !== 'undefined') ? ktdecm : 3;
+              decimel = (system == 'imp') ? ktdecfinal : ktdecmfinal;
+              break;
             case 'convertw':
               multiplier = (system == 'imp') ? 2.20462 : 0.45359237;
               var wdecfinal = (typeof wdec !== 'undefined') ? wdec : 2;
@@ -45,6 +51,12 @@ $(document).ready(function() {
               var idecfinal = (typeof idec !== 'undefined') ? idec : 1;
               var idecmfinal = (typeof idecm !== 'undefined') ? idecm : 5;
               decimel = (system == 'imp') ? idecfinal : idecmfinal;
+              break;
+            case 'convertst':
+              multiplier = (system == 'imp') ? 5.7101471627692 : 0.175126835;
+              var stdecfinal = (typeof stdec !== 'undefined') ? stdec : 0;
+              var stdecmfinal = (typeof stdecm !== 'undefined') ? stdecm : 0;
+              decimel = (system == 'imp') ? stdecfinal : stdecmfinal;
               break;
             default:
               multiplier = (system == 'imp') ? 0.0393700787401575 : 25.4;
@@ -73,15 +85,17 @@ $(document).ready(function() {
         }
       });
 
-      $('.scale,.scalerpm,.scalet,.scalew,.scalei,.scaletemp').each(function() {
+      $('.scale,.scalerpm,.scalet,.scalekt,.scalew,.scalei,.scaletemp,.scalest').each(function() {
         var newVal;
 
         switch ($(this).attr("class")) {
           case 'scalerpm': newVal = (system == 'imp') ? 'HP' : 'kW'; break;
           case 'scalet': newVal = (system == 'imp') ? 'in-lbs' : 'N-m'; break;
+          case 'scalekt': newVal = (system == 'imp') ? 'in-lbs' : 'kN-m'; break;
           case 'scalew': newVal = (system == 'imp') ? 'lbs' : 'kg'; break;
           case 'scalei': newVal = (system == 'imp') ? 'lb-in2' : 'kgm2'; break;
           case 'scaletemp': newVal = (system == 'imp') ? 'F' : 'C'; break;
+          case 'scalest': newVal = (system == 'imp') ? 'lb/in' : 'N/mm'; break;
           default: newVal = (system == 'imp') ? 'in' : 'mm';
         }
 

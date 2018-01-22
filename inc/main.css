@@ -1064,20 +1064,27 @@ FOOTER .social A[href^="tel:"]:active {
 .product-details TABLE.six TH { width: 16.66%; }
 .product-details TABLE.nine TH { width: 11.11%; }
 .product-details TABLE.eleven TH { width: 9.09%; }
+.product-details TABLE.twelve TH { width: 8.33%; }
 .product-details TABLE.thirteen TH { width: 7.69%; }
 .product-details TABLE.fourteen TH { width: 7.14%; }
 .product-details TABLE.fifteen TH { width: 6.66%; font-size: 12px; }
+.product-details TABLE.sixteen TH { width: 6.25%; font-size: 12px; }
 .product-details TABLE.seventeen TH { width: 5.88%; font-size: 10px; }
 .product-details TABLE.eighteen TH { width: 5.55%; font-size: 10px; }
 .product-details TABLE.nineteen TH { width: 5.26%; font-size: 10px; }
 .product-details TABLE.twentythree TH { width: 4.34%; font-size: 9.5px; }
 
+.product-details TABLE.text-four TH { width: 15%; }
+.product-details TABLE.text-four TH.text { width: 40%; padding: 0.7em 0.9em; text-align: left; }
 .product-details TABLE.text-six TH { width: 10%; }
 .product-details TABLE.text-six TH.text { width: 40%; padding: 0.7em 0.9em; text-align: left; }
 .product-details TABLE.text-ten TH { width: 7%; }
 .product-details TABLE.text-ten TH.text { width: 30%; padding: 0.7em 0.9em; text-align: left; }
 
 .product-details TABLE TH.blue { background: #23AAE2; }
+
+.product-details TABLE.service-factor TH { text-align: left; padding: 1.1em 0.7em; }
+.product-details TABLE.service-factor TBODY TR:nth-of-type(even) { background: #FFFFFF; }
 
 .product-details TABLE TBODY TR { background: #FFFFFF; }
 .product-details TABLE TBODY TR:nth-of-type(even) { background: #D3EDF4; }
@@ -1091,6 +1098,7 @@ FOOTER .social A[href^="tel:"]:active {
   text-align: center;
 }
 
+.product-details TABLE.sixteen TD,
 .product-details TABLE.seventeen TD,
 .product-details TABLE.eighteen TD,
 .product-details TABLE.nineteen T { font-size: 13px; }
@@ -1105,6 +1113,9 @@ FOOTER .social A[href^="tel:"]:active {
 .product-details TABLE.text-ten TD.text { width: 30%; padding: 0.7em 0.9em; text-align: left; }
 
 .product-details TABLE.top TD { vertical-align: top; }
+
+.product-details TABLE.service-factor TD { text-align: left; padding: 0.7em; }
+.product-details TABLE.service-factor TD.sub { padding-left: 1.5em; font-style: italic; }
 
 .product-details H4 {
   margin: 0;
@@ -1182,6 +1193,9 @@ FOOTER .social A[href^="tel:"]:active {
   .lookup-form .select-man,
   .lookup-form .select-mod,
   .lookup-form .select-ts { width: 21.5%; }
+  
+  .product-details TABLE.twelve TH { font-size: 1.2vw; }
+  .product-details TABLE.twelve TD { font-size: 1.4vw; }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1282,6 +1296,9 @@ FOOTER .social A[href^="tel:"]:active {
 
   .product-details TABLE.text-six TH { font-size: 1.6vw; }
   .product-details TABLE.text-six TD { font-size: 1.85vw; }
+
+  .product-details TABLE.service-factor TH { font-size: 1.6vw; }
+  .product-details TABLE.service-factor TD { font-size: 1.85vw; }
 }
 
 @media only screen and (max-width: 700px) {
