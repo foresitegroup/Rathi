@@ -824,7 +824,7 @@ FOOTER .social A[href^="tel:"]:active {
   margin: 0;
   color: #123C51;
   font-weight: 900;
-  font-size: 220.83%;
+  font-size: 200%;
   line-height: 1em;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1072,8 +1072,11 @@ FOOTER .social A[href^="tel:"]:active {
 .product-details TABLE.seventeen TH { width: 5.88%; font-size: 10px; }
 .product-details TABLE.eighteen TH { width: 5.55%; font-size: 10px; }
 .product-details TABLE.nineteen TH { width: 5.26%; font-size: 10px; }
-.product-details TABLE.twentythree TH { width: 4.34%; font-size: 9.5px; }
+.product-details TABLE.twenty TH { width: 5%; font-size: 9.5px; padding: 1.1em 0.5%; }
+.product-details TABLE.twentythree TH { width: 4.34%; font-size: 9.5px; padding: 1.1em 0.5%; }
 
+.product-details TABLE.text-three TH { width: 16.66%; }
+.product-details TABLE.text-three TH.text { width: 50%; padding: 0.7em 0.9em; text-align: left; }
 .product-details TABLE.text-four TH { width: 15%; }
 .product-details TABLE.text-four TH.text { width: 40%; padding: 0.7em 0.9em; text-align: left; }
 .product-details TABLE.text-six TH { width: 10%; }
@@ -1101,11 +1104,13 @@ FOOTER .social A[href^="tel:"]:active {
 .product-details TABLE.sixteen TD,
 .product-details TABLE.seventeen TD,
 .product-details TABLE.eighteen TD,
-.product-details TABLE.nineteen T { font-size: 13px; }
-.product-details TABLE.twentythree TD { font-size: 12px; }
+.product-details TABLE.nineteen TD { font-size: 13px; }
+.product-details TABLE.twenty TD,
+.product-details TABLE.twentythree TD { font-size: 10px; }
 
 .product-details TABLE TD.rowspan { vertical-align: top; }
 .product-details TABLE TD.blue { background: #D3EDF4; }
+.product-details TABLE TD.white { background: #FFFFFF; }
 
 .product-details TABLE TD.text { width: 40%; padding: 0.7em 0.9em; text-align: left; }
 
@@ -1181,10 +1186,14 @@ FOOTER .social A[href^="tel:"]:active {
   .product-details TABLE.fourteen TD { font-size: 1.35vw; }
   .product-details TABLE.fifteen TH { font-size: 1vw; }
   .product-details TABLE.fifteen TD { font-size: 1.2vw; }
+  .product-details TABLE.sixteen TH { font-size: 0.9vw; }
+  .product-details TABLE.sixteen TD { font-size: 1.1vw; }
   .product-details TABLE.seventeen TH { font-size: 0.8vw; }
   .product-details TABLE.seventeen TD { font-size: 1vw; }
   .product-details TABLE.eighteen TH { font-size: 0.8vw; }
   .product-details TABLE.eighteen TD { font-size: 1vw; }
+  .product-details TABLE.twenty TH { font-size: 0.8vw; }
+  .product-details TABLE.twenty TD { font-size: 1vw; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1465,6 +1474,9 @@ FOOTER .social A[href^="tel:"]:active {
 
   FOOTER .social A:link,
   FOOTER .social A:visited { margin: 10px 10px 0 0; }
+
+  .product-details TABLE.text-three TH { font-size: 2vw; }
+  .product-details TABLE.text-three TD { font-size: 2.5vw; }
 }
 
 @media only screen and (max-width: 480px) {
