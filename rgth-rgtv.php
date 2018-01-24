@@ -85,11 +85,12 @@ include "header.php";
     <script type="text/javascript">var wdecm = 2;</script>
     <script type="text/javascript" src="inc/scale-convert.js"></script>
 
-    <div class="system-toggle">
+    <div class="system-toggle nudge">
       Units:
       <a href="#" class="convertimp">Imperial</a> / <a href="#" class="convertmet">Metric</a>
     </div>
-
+    
+    <h4>RGTH</h4>
     <table class="fourteen">
       <thead>
         <tr>
@@ -291,22 +292,6 @@ include "header.php";
           <td class="convertw">81</td>
         </tr>
         <tr>
-          <td>1120</td>
-          <td class="convertrpm">143.47</td>
-          <td class="convertt">13700</td>
-          <td>2025</td>
-          <td class="convert" data-orig="60.5">60.5</td>
-          <td class="convert">140</td>
-          <td class="convert">308</td>
-          <td class="convert" data-orig="179.4">179.4</td>
-          <td class="convert" data-orig="149.5">149.5</td>
-          <td class="convert" data-orig="191.5">191.5</td>
-          <td class="convert" data-orig="304.5">304.5</td>
-          <td class="convert">6</td>
-          <td class="convertw">0.73</td>
-          <td class="convertw">81</td>
-        </tr>
-        <tr>
           <td>1130</td>
           <td class="convertrpm">208.39</td>
           <td class="convertt">19900</td>
@@ -346,7 +331,7 @@ include "header.php";
           <td class="convert">108</td>
           <td class="convert">215</td>
           <td class="convert">453</td>
-          <td class="convert" data-orig="269.2">269.25</td>
+          <td class="convert" data-orig="269.2">269.2</td>
           <td class="convert">183</td>
           <td class="convert">271</td>
           <td class="convert">372</td>
@@ -465,6 +450,365 @@ include "header.php";
           <td class="convert" data-orig="12.7">12.7</td>
           <td class="convertw">16.1</td>
           <td class="convertw">1785</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    
+    <div class="system-toggle nudge">
+      Units:
+      <a href="#" class="convertimp">Imperial</a> / <a href="#" class="convertmet">Metric</a>
+    </div>
+    
+    <h4>RGTV</h4>
+    <table class="fifteen">
+      <thead>
+        <tr>
+          <th rowspan="2">Coupling Size</th>
+          <th rowspan="2"><span class="scalerpm">kW</span> at 100 RPM</th>
+          <th rowspan="2">Basic Torque (<span class="scalet">N-m</span>)</th>
+          <th rowspan="2">Max. Speed (RPM)</th>
+          <th colspan="2">Bore Dia. (<span class="scale">mm</span>)</th>
+          <th colspan="7">Dimensions (<span class="scale">mm</span>)</th>
+          <th rowspan="2">Lube Weight (<span class="scalew">kg</span>)</th>
+          <th rowspan="2">Weight w/o Bore (<span class="scalew">kg</span>)</th>
+        </tr>
+        <tr>
+          <th class="blue">Min.</th>
+          <th class="blue">Max.</th>
+          <th class="blue">&Oslash;A</th>
+          <th class="blue">&Oslash;B</th>
+          <th class="blue">C</th>
+          <th class="blue">L</th>
+          <th class="blue">N</th>
+          <th class="blue">P</th>
+          <th class="blue">G Gap</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1020</td>
+          <td class="convertrpm">0.54</td>
+          <td class="convertt">52</td>
+          <td>6000</td>
+          <td class="convert">13</td>
+          <td class="convert">30</td>
+          <td class="convert">111</td>
+          <td class="convert" data-orig="39.7">39.7</td>
+          <td class="convert" data-orig="47.5">47.5</td>
+          <td class="convert">98</td>
+          <td class="convert">24</td>
+          <td class="convert" data-orig="47.5">47.5</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.03</td>
+          <td class="convertw">2</td>
+        </tr>
+        <tr>
+          <td>1030</td>
+          <td class="convertrpm">1.56</td>
+          <td class="convertt">149</td>
+          <td>6000</td>
+          <td class="convert">13</td>
+          <td class="convert">36</td>
+          <td class="convert">121</td>
+          <td class="convert" data-orig="49.2">49.2</td>
+          <td class="convert" data-orig="47.5">47.5</td>
+          <td class="convert">98</td>
+          <td class="convert">24</td>
+          <td class="convert" data-orig="47.5">47.5</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.03</td>
+          <td class="convertw">2.6</td>
+        </tr>
+        <tr>
+          <td>1040</td>
+          <td class="convertrpm">2.61</td>
+          <td class="convertt">249</td>
+          <td>6000</td>
+          <td class="convert">13</td>
+          <td class="convert">44</td>
+          <td class="convert" data-orig="128.5">128.5</td>
+          <td class="convert" data-orig="57.1">57.1</td>
+          <td class="convert">51</td>
+          <td class="convert" data-orig="104.5">104.5</td>
+          <td class="convert" data-orig="25.5">25.5</td>
+          <td class="convert">51</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.05</td>
+          <td class="convertw">3.4</td>
+        </tr>
+        <tr>
+          <td>1050</td>
+          <td class="convertrpm">4.56</td>
+          <td class="convertt">435</td>
+          <td>6000</td>
+          <td class="convert">13</td>
+          <td class="convert">51</td>
+          <td class="convert" data-orig="147.5">147.5</td>
+          <td class="convert" data-orig="66.7">66.7</td>
+          <td class="convert" data-orig="60.5">60.5</td>
+          <td class="convert" data-orig="123.5">123.5</td>
+          <td class="convert">31</td>
+          <td class="convert" data-orig="60.5">60.5</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.05</td>
+          <td class="convertw">5.4</td>
+        </tr>
+        <tr>
+          <td>1060</td>
+          <td class="convertrpm">7.16</td>
+          <td class="convertt">684</td>
+          <td>6000</td>
+          <td class="convert">19</td>
+          <td class="convert">57</td>
+          <td class="convert">162</td>
+          <td class="convert" data-orig="76.2">76.2</td>
+          <td class="convert" data-orig="63.5">63.5</td>
+          <td class="convert">130</td>
+          <td class="convert">32</td>
+          <td class="convert" data-orig="63.5">63.5</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.09</td>
+          <td class="convertw">7.3</td>
+        </tr>
+        <tr>
+          <td>1070</td>
+          <td class="convertrpm">10.41</td>
+          <td class="convertt">994</td>
+          <td>5500</td>
+          <td class="convert">19</td>
+          <td class="convert">68</td>
+          <td class="convert">173</td>
+          <td class="convert" data-orig="87.3">87.3</td>
+          <td class="convert">76</td>
+          <td class="convert" data-orig="155.5">155.5</td>
+          <td class="convert" data-orig="33.5">33.5</td>
+          <td class="convert">76</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.11</td>
+          <td class="convertw">10</td>
+        </tr>
+        <tr>
+          <td>1080</td>
+          <td class="convertrpm">21.47</td>
+          <td class="convertt">2050</td>
+          <td>4750</td>
+          <td class="convert">27</td>
+          <td class="convert">82</td>
+          <td class="convert">200</td>
+          <td class="convert" data-orig="104.8">104.8</td>
+          <td class="convert">89</td>
+          <td class="convert">181</td>
+          <td class="convert">44</td>
+          <td class="convert">89</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.17</td>
+          <td class="convertw">17.7</td>
+        </tr>
+        <tr>
+          <td>1090</td>
+          <td class="convertrpm">39.06</td>
+          <td class="convertt">3730</td>
+          <td>4000</td>
+          <td class="convert">27</td>
+          <td class="convert">95</td>
+          <td class="convert">232</td>
+          <td class="convert" data-orig="123.8">123.8</td>
+          <td class="convert" data-orig="98.5">98.5</td>
+          <td class="convert">200</td>
+          <td class="convert" data-orig="47.5">47.5</td>
+          <td class="convert" data-orig="98.5">98.5</td>
+          <td class="convert">3</td>
+          <td class="convertw">0.25</td>
+          <td class="convertw">25.4</td>
+        </tr>
+        <tr>
+          <td>1100</td>
+          <td class="convertrpm">65.76</td>
+          <td class="convertt">6280</td>
+          <td>3250</td>
+          <td class="convert" data-orig="41.5">41.5</td>
+          <td class="convert">110</td>
+          <td class="convert">267</td>
+          <td class="convert">142</td>
+          <td class="convert" data-orig="120.5">120.5</td>
+          <td class="convert" data-orig="245.5">245.5</td>
+          <td class="convert">60</td>
+          <td class="convert" data-orig="120.5">120.5</td>
+          <td class="convert" data-orig="4.5">4.5</td>
+          <td class="convertw">0.43</td>
+          <td class="convertw">42.2</td>
+        </tr>
+        <tr>
+          <td>1110</td>
+          <td class="convertrpm">97.6</td>
+          <td class="convertt">9320</td>
+          <td>3000</td>
+          <td class="convert" data-orig="41.5">41.5</td>
+          <td class="convert">120</td>
+          <td class="convert">286</td>
+          <td class="convert" data-orig="160.3">160.3</td>
+          <td class="convert">127</td>
+          <td class="convert" data-orig="258.5">258.5</td>
+          <td class="convert">64</td>
+          <td class="convert">127</td>
+          <td class="convert" data-orig="4.5">4.5</td>
+          <td class="convertw">0.51</td>
+          <td class="convertw">54.4</td>
+        </tr>
+        <tr>
+          <td>1120</td>
+          <td class="convertrpm">143.47</td>
+          <td class="convertt">13700</td>
+          <td>2700</td>
+          <td class="convert" data-orig="60.5">60.5</td>
+          <td class="convert">140</td>
+          <td class="convert">319</td>
+          <td class="convert" data-orig="179.4">179.4</td>
+          <td class="convert"">149</td>
+          <td class="convert" data-orig="304.5">304.5</td>
+          <td class="convert" data-orig="73.5">73.5</td>
+          <td class="convert"">149</td>
+          <td class="convert">6</td>
+          <td class="convertw">0.73</td>
+          <td class="convertw">81.6</td>
+        </tr>
+        <tr>
+          <td>1130</td>
+          <td class="convertrpm">208.39</td>
+          <td class="convertt">19900</td>
+          <td>2400</td>
+          <td class="convert" data-orig="66.5">66.5</td>
+          <td class="convert">170</td>
+          <td class="convert">378</td>
+          <td class="convert" data-orig="217.5">217.5</td>
+          <td class="convert">162</td>
+          <td class="convert">330</td>
+          <td class="convert">75</td>
+          <td class="convert">162</td>
+          <td class="convert">6</td>
+          <td class="convertw">0.91</td>
+          <td class="convertw">122.5</td>
+        </tr>
+        <tr>
+          <td>1140</td>
+          <td class="convertrpm">299.5</td>
+          <td class="convertt">28600</td>
+          <td>2200</td>
+          <td class="convert" data-orig="66.5">66.5</td>
+          <td class="convert">200</td>
+          <td class="convert">416</td>
+          <td class="convert">254</td>
+          <td class="convert">184</td>
+          <td class="convert" data-orig="371.5">371.5</td>
+          <td class="convert">78</td>
+          <td class="convert">184</td>
+          <td class="convert">6</td>
+          <td class="convertw">1.13</td>
+          <td class="convertw">180.1</td>
+        </tr>
+        <tr>
+          <td>1150</td>
+          <td class="convertrpm">416.78</td>
+          <td class="convertt">39800</td>
+          <td>2000</td>
+          <td class="convert">108</td>
+          <td class="convert">215</td>
+          <td class="convert" data-orig="476.5">476.5</td>
+          <td class="convert" data-orig="269.2">269.2</td>
+          <td class="convert">183</td>
+          <td class="convert">372</td>
+          <td class="convert">107</td>
+          <td class="convert">183</td>
+          <td class="convert">6</td>
+          <td class="convertw">1.95</td>
+          <td class="convertw">230</td>
+        </tr>
+        <tr>
+          <td>1160</td>
+          <td class="convertrpm">585.38</td>
+          <td class="convertt">55900</td>
+          <td>1750</td>
+          <td class="convert" data-orig="120.5">120.5</td>
+          <td class="convert">240</td>
+          <td class="convert" data-orig="533.5">533.5</td>
+          <td class="convert" data-orig="304.8">304.8</td>
+          <td class="convert">198</td>
+          <td class="convert">402</td>
+          <td class="convert" data-orig="114.5">114.5</td>
+          <td class="convert">198</td>
+          <td class="convert">6</td>
+          <td class="convertw">2.81</td>
+          <td class="convertw">321.1</td>
+        </tr>
+        <tr>
+          <td>1170</td>
+          <td class="convertrpm">781.21</td>
+          <td class="convertt">74600</td>
+          <td>1600</td>
+          <td class="convert" data-orig="133.5">133.5</td>
+          <td class="convert">280</td>
+          <td class="convert">584</td>
+          <td class="convert" data-orig="355.6">355.6</td>
+          <td class="convert">216</td>
+          <td class="convert">438</td>
+          <td class="convert">120</td>
+          <td class="convert">216</td>
+          <td class="convert">6</td>
+          <td class="convertw">3.49</td>
+          <td class="convertw">448.2</td>
+        </tr>
+        <tr>
+          <td>1180</td>
+          <td class="convertrpm">1078.61</td>
+          <td class="convertt">103000</td>
+          <td>1400</td>
+          <td class="convert" data-orig="152.5">152.5</td>
+          <td class="convert">300</td>
+          <td class="convert">630</td>
+          <td class="convert" data-orig="393.7">393.7</td>
+          <td class="convert">239</td>
+          <td class="convert" data-orig="483.5">483.5</td>
+          <td class="convert">130</td>
+          <td class="convert">239</td>
+          <td class="convert">6</td>
+          <td class="convertw">3.76</td>
+          <td class="convertw">591</td>
+        </tr>
+        <tr>
+          <td>1190</td>
+          <td class="convertrpm">1434.66</td>
+          <td class="convertt">137000</td>
+          <td>1300</td>
+          <td class="convert" data-orig="152.5">152.5</td>
+          <td class="convert">335</td>
+          <td class="convert">685</td>
+          <td class="convert" data-orig="436.9">436.9</td>
+          <td class="convert">260</td>
+          <td class="convert" data-orig="524.5">524.5</td>
+          <td class="convert">135</td>
+          <td class="convert">259</td>
+          <td class="convert">6</td>
+          <td class="convertw">4.4</td>
+          <td class="convertw">761</td>
+        </tr>
+        <tr>
+          <td>1200</td>
+          <td class="convertrpm">1947.79</td>
+          <td class="convertt">186000</td>
+          <td>1100</td>
+          <td class="convert">178</td>
+          <td class="convert">360</td>
+          <td class="convert">737</td>
+          <td class="convert" data-orig="497.8">497.8</td>
+          <td class="convert" data-orig="279.5">279.5</td>
+          <td class="convert">565</td>
+          <td class="convert">145</td>
+          <td class="convert" data-orig="279.5">279.5</td>
+          <td class="convert">6</td>
+          <td class="convertw">5.62</td>
+          <td class="convertw">1021</td>
         </tr>
       </tbody>
     </table>
