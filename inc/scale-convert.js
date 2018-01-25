@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
 
   function convertTo(system) {
-    $('.convert,.convertrpm,.convertt,.convertkt,.convertw,.converti,.convertst').each(function() {
+    $('.convert,.convertrpm,.convertt,.convertkt,.convertw,.converti,.convertst,.convertn').each(function() {
       if ($(this).text() != '') {
         var multiplier, decimel;
 
@@ -58,6 +58,12 @@ $(document).ready(function() {
             var stdecmfinal = (typeof stdecm !== 'undefined') ? stdecm : 0;
             decimel = (system == 'imp') ? stdecfinal : stdecmfinal;
             break;
+          case 'convertn':
+            multiplier = (system == 'imp') ? 0.22480894387096 : 4.4482216;
+            var ndecfinal = (typeof ndec !== 'undefined') ? ndec : 0;
+            var ndecmfinal = (typeof ndecm !== 'undefined') ? ndecm : 0;
+            decimel = (system == 'imp') ? ndecfinal : ndecmfinal;
+            break;
           default:
             multiplier = (system == 'imp') ? 0.0393700787401575 : 25.4;
             var decfinal = (typeof dec !== 'undefined') ? dec : 2;
@@ -85,7 +91,7 @@ $(document).ready(function() {
       }
     });
 
-    $('.scale,.scalerpm,.scalet,.scalekt,.scalew,.scalei,.scaletemp,.scalest').each(function() {
+    $('.scale,.scalerpm,.scalet,.scalekt,.scalew,.scalei,.scaletemp,.scalest,.scalen').each(function() {
       var newVal;
 
       switch ($(this).attr("class")) {
@@ -96,6 +102,7 @@ $(document).ready(function() {
         case 'scalei': newVal = (system == 'imp') ? 'lb-in2' : 'kgm2'; break;
         case 'scaletemp': newVal = (system == 'imp') ? 'F' : 'C'; break;
         case 'scalest': newVal = (system == 'imp') ? 'lb/in' : 'N/mm'; break;
+        case 'scalen': newVal = (system == 'imp') ? 'lbf' : 'N'; break;
         default: newVal = (system == 'imp') ? 'in' : 'mm';
       }
 
@@ -118,6 +125,13 @@ $(document).ready(function() {
           $(this).text(newVal);
         }
       }
+    });
+    
+    // Not an actual conversion, just a basic swap
+    $('TD[data-met],TD[data-imp],SPAN[data-met],SPAN[data-imp]').each(function() {
+      var newVal;
+      newVal = (system == 'imp') ? $(this).attr('data-imp') : $(this).attr('data-met');
+      $(this).text(newVal);
     });
   }
 });

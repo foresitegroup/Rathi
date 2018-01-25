@@ -66,7 +66,7 @@ include "header.php";
   <div class="site-width">
     <h3>Details &amp; Specs</h3>
 
-    <script type="text/javascript" src="inc/unit-convert.js"></script>
+    <script type="text/javascript" src="inc/scale-convert.js"></script>
 
     <div class="system-toggle">
       Units:
