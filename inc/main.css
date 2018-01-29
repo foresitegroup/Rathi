@@ -1150,6 +1150,279 @@ FOOTER .social A[href^="tel:"]:active {
   text-transform: uppercase;
 }
 
+.couplings-page {
+  background: #EBEBEB url(../images/grid.png);
+  border-bottom: 16px solid #23AAE2;
+}
+
+.couplings-header {
+  background-image: linear-gradient(to right, #23AAE2 50%, transparent 50%);
+  color: #123C51;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 100;
+}
+
+.couplings-header SPAN { color: #FFFFFF; }
+
+.ch-sub:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 50%;
+  height: 68%;
+  background: #123C51;
+  border-top: 10px solid #23AAE2;
+}
+
+.couplings-header .site-width {
+  background-image: linear-gradient(115deg, #23AAE2 85%, transparent 85%);
+  padding: 0.8em 0;
+  position: relative;
+}
+
+.couplings-header .site-width:after {
+  content: url(../images/trim.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  font-size: 13px;
+  line-height: 1em;
+}
+
+.couplings-page .three-col {
+  display: flex;
+  padding: 4em 0 6em;
+}
+
+.couplings-page .three-col > DIV {
+  width: 27.27%;
+  margin-left: 9.095%;
+}
+
+.couplings-page .three-col > DIV:first-of-type { margin-left: 0 }
+
+.couplings-page .three-col > DIV DIV {
+  background: #123C51;
+  box-sizing: border-box;
+  padding: 7.66% 7.66% 1.6em;
+  margin-top: 2em;
+}
+
+.couplings-page .three-col > DIV DIV:first-of-type { margin-top: 0; }
+
+.couplings-page .three-col > DIV:first-of-type DIV { height: 100%; }
+
+.couplings-page .three-col H1 {
+  margin: 0 0 0.5em;
+  color: #23AAE2;
+  font-weight: 800;
+  font-size: 178%;
+  line-height: 1em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.couplings-page .three-col H2 {
+  margin: 0 0 0.2em;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 111.11%;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.couplings-page .three-col A:link,
+.couplings-page .three-col A:visited {
+  color: #CCCCCC;
+}
+
+.couplings-page .three-col A:hover,
+.couplings-page .three-col A:active {
+  color: #FFFFFF;
+}
+
+.couplings-page .three-col A:before {
+  content: "///";
+  color: #F9EF57;
+  margin: 0 0.5em 0 2em;
+}
+
+.about {
+  background: #FFFFFF;
+  color: #313131;
+}
+
+.about-header {
+  background-image: linear-gradient(to right, #23AAE2 50%, transparent 50%);
+  color: #123C51;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 100;
+}
+
+.about-header SPAN { color: #FFFFFF; }
+
+.about-header .site-width {
+  background-image: linear-gradient(115deg, #23AAE2 85%, transparent 85%);
+  padding: 0.9em 0;
+  position: relative;
+}
+
+.about-header .site-width:after {
+  content: url(../images/trim.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 101;
+  -webkit-transform: translate(-85%, 50%);
+  -ms-transform: translate(-85%, 50%);
+  transform: translate(-85%, 50%);
+  font-size: 13px;
+  line-height: 1em;
+}
+
+.about-header-content {
+  background: url(../images/about-header.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.about-header-content:after {
+  content: url(../images/trim.png);
+  position: absolute;
+  bottom: 0;
+  left: 53%;
+  z-index: 101;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  font-size: 13px;
+  line-height: 1em;
+}
+
+.about-header-content > .site-width {
+  box-sizing: border-box;
+  padding: 5em 340px 6em 0;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+
+.about-header-content > .site-width H2 {
+  margin: 0 0 0.2em;
+  color: #21A7DF;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 214%;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about > .site-width {
+  padding: 5em 0 7em;
+}
+
+.about > .site-width H2 {
+  margin: 0;
+  color: #123C51;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about .team {
+  display: inline-block;
+  vertical-align: top;
+  width: 46.5%;
+  margin: 3em 0 1.5em -4px;
+}
+
+.about .team:nth-of-type(odd) { margin-right: 7%; }
+
+.about .team .image {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6%;
+  width: 39.52%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about .team .image:before {
+  content: "";
+  display: block;
+  padding-top: 150%;
+}
+
+.about .team .text {
+  display: inline-block;
+  vertical-align: top;
+  width: 53%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.01em;
+}
+
+.about .team .text H3 {
+  margin: 0 0 0.2em;
+  color: #123C51;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about .team .text H4 {
+  margin: 0 0 0.1em;
+  color: #21A7DF;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+}
+
+.about .team .text A {
+  color: #70C3E9;
+  text-decoration: underline;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1em;
+  letter-spacing: 0.06em;
+}
+
+.about .team .text A:hover { color: #123C51; }
+
+
+
 
 
 
@@ -1203,6 +1476,12 @@ FOOTER .social A[href^="tel:"]:active {
   .product-details TABLE.twenty TD { font-size: 1vw; }
   .product-details TABLE.twentyfour TH { font-size: 0.8vw; }
   .product-details TABLE.twentyfour TD { font-size: 0.8vw; }
+
+  .couplings-header { font-size: 5.4vw; }
+  
+  .about-header { font-size: 5vw; }
+  .about-header .site-width { background-image: linear-gradient(115deg, #23AAE2 90%, transparent 90%); }
+  .about-header-content > .site-width { padding-right: 20%; }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1271,6 +1550,8 @@ FOOTER .social A[href^="tel:"]:active {
   .product-details TABLE.text-ten TH.text { font-size: 1.3vw; }
   .product-details TABLE.text-ten TD,
   .product-details TABLE.text-ten TD.text { font-size: 1.65vw; }
+
+  .about .team .image { margin-right: 5%; }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1317,6 +1598,14 @@ FOOTER .social A[href^="tel:"]:active {
 
   .product-details TABLE.service-factor TH { font-size: 1.6vw; }
   .product-details TABLE.service-factor TD { font-size: 1.85vw; }
+
+  .couplings-page .three-col A:before { margin-left: 15%; }
+
+  .about-header-content:after { left: auto; right: 2%; }
+  .about-header-content > .site-width { padding-right: 0; }
+
+  .about .team {width: 100%; margin-right: 0; }
+  .about .team .image { margin-right: 6%; }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1443,6 +1732,8 @@ FOOTER .social A[href^="tel:"]:active {
   .product-details TABLE.text-table TH { font-size: 1.75vw; }
   .product-details TABLE.text-table TD { font-size: 2vw; }
   .product-details TABLE TD.text { width: 33%; }
+
+  .couplings-page .three-col > DIV DIV { font-size: 2.5vw; }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1488,6 +1779,14 @@ FOOTER .social A[href^="tel:"]:active {
   .product-details TABLE.text-three TD { font-size: 2.5vw; }
   .product-details TABLE.seven TH { font-size: 2vw; }
   .product-details TABLE.seven TD { font-size: 2.5vw; }
+  
+  .couplings-header { font-size: 5.8vw; }
+  .couplings-page .three-col { display: block; }
+  .couplings-page .three-col > DIV { width: 100%; margin-left: 0 }
+  .couplings-page .three-col > DIV DIV:first-of-type { margin-top: 2em; }
+  .couplings-page .three-col > DIV:first-of-type DIV { margin-top: 0; }
+  .couplings-page .three-col > DIV DIV { font-size: 18px; }
+  .couplings-page .three-col A:before { margin-left: 2em; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1523,4 +1822,6 @@ FOOTER .social A[href^="tel:"]:active {
     -ms-transform: none;
     transform: none;
   }
+
+  .about .team .image { margin-right: 5.5%; }
 }

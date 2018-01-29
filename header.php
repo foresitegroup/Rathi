@@ -1,5 +1,12 @@
 <?php
 include "inc/fintoozler.php";
+
+function email($address, $name="") {
+  $email = "";
+  for ($i = 0; $i < strlen($address); $i++) { $email .= (rand(0, 1) == 0) ? "&#" . ord(substr($address, $i)) . ";" : substr($address, $i, 1); }
+  if ($name == "") $name = $email;
+  echo "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;$email\">$name</a>";
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,14 +52,8 @@ include "inc/fintoozler.php";
           <input type="checkbox" id="toggle-menu" role="button">
           <label for="toggle-menu"></label>
           <ul>
-            <li>
-              <a href="#">Couplings</a>
-              <ul>
-                <li><a href="#">Elastomeric</a></li>
-                <li><a href="#">Metallic</a></li>
-              </ul>
-            </li>
-            <li><a href="#">About</a></li>
+            <li><a href="couplings.php">Couplings</a></li>
+            <li><a href="about.php">About</a></li>
             <li id="menu-lookup">
               <input type="checkbox" id="toggle-lookup" role="button">
               <label for="toggle-lookup">Elastomeric Product Lookup</label>

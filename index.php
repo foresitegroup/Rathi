@@ -23,11 +23,11 @@ include "header.php";
 
     <div class="couplings">
       <div style="background-image: url(images/elastomeric-coupling.png);">
-        <a href="#">Elastomeric Couplings</a>
+        <a href="couplings.php">Elastomeric Couplings</a>
       </div>
 
       <div style="background-image: url(images/metallic-coupling.png);">
-        <a href="#">Metallic Couplings</a>
+        <a href="couplings.php#metallic">Metallic Couplings</a>
       </div>
     </div>
   </div>
