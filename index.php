@@ -121,43 +121,19 @@ include "header.php";
 </script>
 
 <div id="home-blog">
-  <a href="#">
-    <div style="background-image: url(https://fillmurray.com/400/400);">
-      <div class="title">Blog Title One</div>
-      <div class="author">By Dougie Jones</div>
+  <?php
+  require('blog/wp-load.php');
+  query_posts('showposts=-1');
+  while (have_posts()): the_post();
+  ?>
+  <a href="<?php echo get_permalink(); ?>">
+    <div style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>);">
+      <div class="title"><?php the_title(); ?></div>
+      <div class="author">By <?php the_author(); ?></div>
     </div>
   </a>
-  <a href="#">
-    <div style="background-image: url(https://fillmurray.com/410/410);">
-      <div class="title">Blog Title Two Is Kind of Long</div>
-      <div class="author">By Chip Dipson</div>
-    </div>
-  </a>
-  <a href="#">
-    <div style="background-image: url(https://fillmurray.com/420/420);">
-      <div class="title">Blog Title Three Is Really Quite Long</div>
-      <div class="author">By Dip Dobson</div>
-    </div>
-  </a>
-  <a href="#">
-    <div style="background-image: url(https://fillmurray.com/430/430);">
-      <div class="title">Blog Title Four</div>
-      <div class="author">By Dougie Jones</div>
-    </div>
-  </a>
-  <a href="#">
-    <div style="background-image: url(https://fillmurray.com/440/440);">
-      <div class="title">Blog Title Five</div>
-      <div class="author">By Dougie Jones</div>
-    </div>
-  </a>
-  <a href="#">
-    <div style="background-image: url(https://fillmurray.com/450/450);">
-      <div class="title">Blog Title Six</div>
-      <div class="author">By Dougie Jones</div>
-    </div>
-  </a>
-
+  <?php endwhile; ?>
+  
   <span href="#" id="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
   <span href="#" id="next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
 </div>

@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     $.ajax({
       type: "POST", cache: false,
-      url: "ajax-model.php",
+      url: TopDir+"ajax-model.php",
       data: 'manufacturer='+ manufacturer,
       success: function(html) { $(id_mod).html(html); }
     });
@@ -40,7 +40,7 @@ $(document).ready(function() {
   $(id_mod).change(function() {
     $.ajax({
       type: "POST", cache: false,
-      url: "ajax-type-size.php",
+      url: TopDir+"ajax-type-size.php",
       data: 'manufacturer='+ manufacturer +'&model='+ $(this).val(),
       success: function(html) { $(id_ts).html(html); }
     });
@@ -66,7 +66,7 @@ $(document).ready(function() {
     $.ajax({
       type: 'POST',
       url: $(id_fp).attr('action'),
-      data: $(id_fp).serialize() + '&fpr_id='+fpr_id+'&src=ajax'
+      data: $(id_fp).serialize() + '&fpr_id='+fpr_id+'&topdir='+TopDir+'&src=ajax'
     })
     .done(function(response) {
       $(id_fpr).css('display', 'block').html(response);

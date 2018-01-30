@@ -20,13 +20,13 @@ if ($row['rathi_type_size'] != "") {
       Rathi<br><?php echo $row['model'] . " " . $row['rathi_type_size']; ?>
     </div>
   </div>
-  <a href="<?php echo strtolower($row['type']); ?>.php">See Rathi part details</a>
+  <a href="<?php echo $_POST['topdir'] . strtolower($row['type']); ?>.php">See Rathi part details</a>
   <?php
 } else {
   ?>
   <h1>No Equivalent Found</h1>
   Contact us for more information.<br>
-  <a href="#">Contact a Rathi rep</a>
+  <a href="<?php echo $_POST['topdir']; ?>about.php">Contact a Rathi rep</a>
   <?php
 }
 

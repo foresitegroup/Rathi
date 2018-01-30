@@ -1,7 +1,7 @@
 
     <footer>
       <div class="site-width">
-        <div class="logo"><img src="images/logo.png" alt="Rathi North America"></div>
+        <div class="logo"><img src="<?php echo $TopDir; ?>images/logo.png" alt="Rathi North America"></div>
 
         <div class="address">
           Rathi North America<br>
