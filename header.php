@@ -1,6 +1,5 @@
 <?php
 if (!isset($TopDir)) $TopDir = "";
-if (isset($TopDir)) $GLOBALS['topdir'] = $TopDir;
 
 include "inc/fintoozler.php";
 

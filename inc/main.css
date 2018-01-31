@@ -1250,7 +1250,7 @@ FOOTER .social A[href^="tel:"]:active {
 
 .couplings-page .three-col A:hover,
 .couplings-page .three-col A:active {
-  color: #FFFFFF;
+  color: #23AAE2;
 }
 
 .couplings-page .three-col A:before {
@@ -1786,8 +1786,9 @@ FOOTER .social A[href^="tel:"]:active {
   .about-header-content:after { left: auto; right: 2%; }
   .about-header-content > .site-width { padding-right: 0; }
 
-  .about .team {width: 100%; margin-right: 0; }
+  .about .team { width: 100%; margin-right: 0; }
   .about .team .image { margin-right: 6%; }
+  .about .team:nth-of-type(odd) { margin-right: 0; }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1983,6 +1984,8 @@ FOOTER .social A[href^="tel:"]:active {
 }
 
 @media only screen and (max-width: 480px) {
+  #logo { height: 100px; }
+  
   HEADER .header-right { width: 36%; }
   HEADER .header-right .call { font-size: 3.5vw; text-align: right; }
   HEADER .header-right .call SPAN { font-size: 120%; display: block; }

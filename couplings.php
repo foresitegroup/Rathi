@@ -97,7 +97,7 @@ include "header.php";
         <div>
           <h1>Grid</h1>
 
-          <a href="rdth-rgtv.php">RGTH/RGTV</a>
+          <a href="rgth-rgtv.php">RGTH/RGTV</a>
         </div>
 
         <div>
@@ -111,7 +111,7 @@ include "header.php";
         <div>
           <h1>Metallic Gear</h1>
 
-          <a href="rdg-rgs.php">RDG/RGS</a>
+          <a href="rgd-rgs.php">RGD/RGS</a>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <?php
-$PageTitle = "Metallic Coupling - Gear Couplings / RDG/RGS Types";
+$PageTitle = "Metallic Coupling - Gear Couplings / RGD/RGS Types";
 include "header.php";
 ?>
 
@@ -7,7 +7,7 @@ include "header.php";
   <div class="product-header">
     <div class="site-width">
       <h2>Metallic Coupling</h2>
-      <h1>Gear Couplings / RDG/RGS Types</h1>
+      <h1>Gear Couplings / RGD/RGS Types</h1>
       AGMA Standard Design
     </div>
   </div>
@@ -19,9 +19,9 @@ include "header.php";
 
       <h3>Design Features</h3>
       <ul>
-        <li>High Torque Ratings </li>
-        <li>Large Bore Capacity </li>
-        <li>Interchangeability </li>
+        <li>High Torque Ratings</li>
+        <li>Large Bore Capacity</li>
+        <li>Interchangeability</li>
         <li>High Misalignment Capacity</li>
       </ul>
       <br>
