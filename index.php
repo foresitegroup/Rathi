@@ -18,7 +18,7 @@ include "header.php";
   <div class="site-width">
     <div class="text">
       <h1>Global Quality Couplings.</h1>
-      Rathi North America offers a wide range of standard elastomeric and metallic couplings with time-tested, off-the-shelf designs. Local distribution and technical support is focused on serving OEMs, Distributors, and End User customers. Five decades of integrated manufacturing experience provide optimal quality and performance. Rathi’s operations are certified to ISO 9001:2008 International Standards for Quality Management, and the couplings comply with API, ISO, DIN, BS, IS, AGMA standards and provides ATEX certification.
+      Rathi North America offers a wide range of standard elastomeric and metallic couplings with time-tested, off-the-shelf designs. Local distribution and technical support is focused on serving OEMs, Distributors, and End User customers. Five decades of integrated manufacturing experience provide optimal quality and performance. Rathi's operations are certified to ISO 9001:2008 International Standards for Quality Management, and the couplings comply with API, ISO, DIN, BS, IS, AGMA standards and provides ATEX certification.
     </div>
 
     <div class="couplings">
@@ -57,7 +57,7 @@ include "header.php";
           </select>
         </div>
       </div>
-      
+
       <div class="select-mod">
         <label for="home-model">Model</label>
         <div class="select">
@@ -66,7 +66,7 @@ include "header.php";
           </select>
         </div>
       </div>
-      
+
       <div class="select-ts">
         <label for="home-type-size">Type/Size</label>
         <div class="select">
@@ -77,10 +77,36 @@ include "header.php";
       </div>
 
       <button id="home-find-my-part" class="find-my-part">Find My Part</button>
+
+      <div class="disclaimer">
+        This Elastomeric Product Lookup is intended to provide only general guidance. Rathi North America makes no warranty concerning the equivalency, interchangeability or suitability of any cross-referenced products for any particular application or use.
+      </div>
     </form>
   </div>
 
   <div id="home-find-part-results" class="find-part-results"></div>
+</div>
+
+<div id="home-blog">
+  <?php
+  require('blog/wp-load.php');
+  query_posts('showposts=-1');
+  while (have_posts()): the_post();
+  ?>
+  <a href="<?php echo get_permalink(); ?>">
+    <div style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>);">
+      <div class="title"><?php the_title(); ?></div>
+      <div class="author">By <?php the_author(); ?></div>
+    </div>
+  </a>
+  <?php
+  endwhile;
+  $count_posts = wp_count_posts();
+  $post_num = ($count_posts->publish - 1);
+  ?>
+
+  <span href="#" id="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+  <span href="#" id="next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
 </div>
 
 <script type="text/javascript" src="inc/jquery.cycle2.min.js"></script>
@@ -90,7 +116,7 @@ include "header.php";
   $(document).ready(function() {
     function buildCarousel() {
       var slides = 4;
-      var startslide = 5;
+      var startslide = <?php echo $post_num; ?>;
 
       if (window.innerWidth < 901) { slides = 2; startslide = 0; }
       if (window.innerWidth < 481) { slides = 1; startslide = 0; }
@@ -113,29 +139,11 @@ include "header.php";
     }
 
     buildCarousel();
-    
+
     $(window).resize(function(){
       setTimeout(function() { resizeCarousel(); },100);
     });
   });
 </script>
-
-<div id="home-blog">
-  <?php
-  require('blog/wp-load.php');
-  query_posts('showposts=-1');
-  while (have_posts()): the_post();
-  ?>
-  <a href="<?php echo get_permalink(); ?>">
-    <div style="background-image: url(<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>);">
-      <div class="title"><?php the_title(); ?></div>
-      <div class="author">By <?php the_author(); ?></div>
-    </div>
-  </a>
-  <?php endwhile; ?>
-  
-  <span href="#" id="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
-  <span href="#" id="next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
-</div>
 
 <?php include "footer.php"; ?>

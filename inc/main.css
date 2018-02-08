@@ -248,9 +248,9 @@ HEADER .header-right UL LI#menu-lookup.ml-active {
 
 #toggle-lookup:checked + LABEL + #lookup { display: block; }
 
-#find-part { margin: 41px 30px 63px; }
+#find-part { margin: 41px 30px; }
 
-#home-find-part { margin-bottom: 100px; }
+#home-find-part { margin-bottom: 50px; }
 
 .lookup-form {
   color: #F9EF57;
@@ -340,10 +340,20 @@ HEADER .header-right UL LI#menu-lookup.ml-active {
 
 .lookup-form .select SELECT OPTION { text-transform: none; } /* Maybe some day.... */
 
+.lookup-form .disclaimer {
+  width: 75%;
+  margin-top: 1em;
+  color: #FFFFFF;
+  font-size: 95%;
+  line-height: 1.3em;
+  letter-spacing: 0.1em;
+  text-transform: none;
+}
+
 .find-my-part {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  top: 0.7em;
   outline: none;
   border: 0;
   box-sizing: border-box;

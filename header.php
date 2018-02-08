@@ -101,6 +101,10 @@ function email($address, $name="") {
                   </div>
 
                   <button id="find-my-part" class="find-my-part">Find My Part</button>
+
+                  <div class="disclaimer">
+                    This Elastomeric Product Lookup is intended to provide only general guidance. Rathi North America makes no warranty concerning the equivalency, interchangeability or suitability of any cross-referenced products for any particular application or use.
+                  </div>
                 </form>
 
                 <div id="find-part-results" class="find-part-results"></div>
