@@ -21,7 +21,7 @@ include "header.php";
         <li>Easy to assemble &amp; disassemble</li>
         <li>Cushions easily inspected at all times</li>
         <li>Material of construction - C.I. for Size 307 to 367; S.G. Iron Size 407 to 1117</li>
-        <li>For pumps in chemical industry, ideal for reciprocating pumps, diesel or gas engines, multiple generator sets and such heavy duty applications</li>
+        <li>For pumps in chemical industry, ideal for reciprocating pumps, diesel or gas engines, multiple generator sets and heavy duty applications</li>
       </ul>
     </div>
 
@@ -58,7 +58,7 @@ include "header.php";
         });
       </script>
 
-      <!-- <a href="" class="specsheet">Download Spec Sheet <i class="fa fa-download" aria-hidden="true"></i></a> -->
+      <a href="pdf/L-SW-RRS_Spec_Sheet.pdf" class="specsheet">Download Spec Sheet <i class="fa fa-download" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>

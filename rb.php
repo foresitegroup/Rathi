@@ -8,7 +8,6 @@ include "header.php";
     <div class="site-width">
       <h2>Pin and Bushing Coupling</h2>
       <h1>B-Flex / RB Type</h1>
-      Radially Split, Bonded Urethane Tire
     </div>
   </div>
 

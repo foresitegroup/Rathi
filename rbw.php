@@ -19,7 +19,7 @@ include "header.php";
         <li>Sleeve-Flex can be installed quickly and easily because there are no bolts, gaskets, covers, or seals.</li>
         <li>Alignment can be checked with a straight edge placed across the outside of the precision machined flanges. No special tools are need for the installation, alignment, or removal.</li>
         <li>The teeth of the sleeve lock into the teeth of the flanges without clamps or screws and tighten under torque to provide smooth transmission of power.</li>
-        <li>There is no rubbing action of metal against rubber to cause wear. This eliminates the need for lubrication or maintenance, and provided a clean, dependable, and quiet performance.</li>
+        <li>There is no rubbing action of metal against rubber to cause wear. This eliminates the need for lubrication or maintenance, and provides a clean, dependable, and quiet performance.</li>
       </ul>
     </div>
 
@@ -303,7 +303,7 @@ include "header.php";
       <li>Size 3 and Size 4 Flanges are available in Aluminum.</li>
       <li>Size 5 to Size 13 Flanges are available in Cast Iron.</li>
       <li>The weight is approximate with solid flanges.</li>
-      <li>For vertical installation contact RATHI.</li>
+      <li>For vertical installation contact Rathi NA.</li>
     </ul>
   </div>
 </div>

@@ -16,8 +16,8 @@ include "header.php";
     <div class="left">
       <h3>Design Features</h3>
       <ul>
-        <li>Accommodated axial, parallel, and angular shaft misalignment</li>
-        <li>Suitable for vertical and horizontal application</li>
+        <li>Accommodates axial, parallel, and angular shaft misalignment</li>
+        <li>Suitable for vertical and horizontal applications</li>
         <li>Simple and easy to assemble with axial plug-in</li>
         <li>Low weight and low inertia</li>
         <li>Maintenance free due to combination of steel and nylon</li>
@@ -270,7 +270,7 @@ include "header.php";
 
     <h4>Guidelines for Assembly</h4>
     <ul>
-      <li>Both the hubs must be assembled so they are flush with shaft ends</li>
+      <li>Both hubs must be assembled so they are flush with shaft ends</li>
       <li>Maintain gap 'G' as mentioned in the Technical Data table; if it is difficult to measure dimension 'G', use overall length</li>
       <li>The maximum speed and maximum misalignment cannot be used at the same time. The presence of misalignment reduces the maximum speed. With constant torque and well-aligned shafts, Rathi polygear couplings can be used up to the maximum torque.</li>
       <li>It is important that the sleeve slides easily in the axial direction. Accurate alignment of shafts improves the life of this coupling.</li>

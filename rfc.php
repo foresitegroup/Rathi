@@ -26,11 +26,11 @@ include "header.php";
       <br>
 
       <h3>Extra Protection Against Failure</h3>
-      The Inter-linking hubs act as an additional<br>
+      The Inter-linking hubs act as an additional protection against failure.<br>
       <br>
 
       <h3>Interchangeable</h3>
-      The RFC coupling is compatible with leading makes of couplings. Elastomeric spider is of Nitrile rubber suitable for temperatures from -40&deg;F to + 212&deg;F.
+      The RFC coupling is compatible with leading makes of couplings. Elastomeric spider is made of Nitrile rubber suitable for temperatures from -40&deg;F to + 212&deg;F.
     </div>
 
     <div class="right">

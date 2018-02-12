@@ -14,7 +14,7 @@ include "header.php";
 
   <div class="site-width">
     <div class="left">
-      To get the weight of the complete unit, add 2 hubs and 1 transmission unit.
+      
     </div>
 
     <div class="right">
@@ -50,7 +50,7 @@ include "header.php";
         });
       </script>
 
-      <!-- <a href="" class="specsheet">Download Spec Sheet <i class="fa fa-download" aria-hidden="true"></i></a> -->
+      <a href="pdf/RSK_Spec_Sheet.pdf" class="specsheet">Download Spec Sheet <i class="fa fa-download" aria-hidden="true"></i></a>
     </div>
   </div>
 </div>

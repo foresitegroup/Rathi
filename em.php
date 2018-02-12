@@ -15,7 +15,7 @@ include "header.php";
   <div class="site-width">
     <div class="left">
       <ul>
-        <li>Couplings are have ATEX certification as standard</li>
+        <li>Couplings have ATEX certification as standard</li>
         <li>Non-Sparking and non-standard DBSE options are vailable</li>
         <li>Weight and inertia are for maximum bores and minimum DBSE</li>
         <li>Possible hub combinations are: I/I; I/II; II/II; III/III, III/IV; IV/IV</li>

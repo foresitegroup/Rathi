@@ -842,11 +842,11 @@ include "header.php";
       <li>Standard Single engagement couplings accommodate angular misalignment and end float without imposing appreciable axial loads on adjacent bearings.</li>
       <li>Exposed bolt design allows the use of either open end or socket wrenches.</li>
       <li>Used primarily with floating shaft assemblies to cover longer distance between shaft ends.</li>
-      <li>To reach the maximum speed, balancing is dynamic balancing recommended. Please contact Rathi NA for more details.</li>
+      <li>To reach the maximum speed, dynamic balancing is recommended. Please contact Rathi NA for more details.</li>
       <li>Maximum bores specified above are for uniformly loaded drives only.</li>
       <li>Maximum bore for coupling with or equivalent to DIN 6885 keys.</li>
-      <li>Minimum bore are a rough stock bore.</li>
-      <li>For vertical installation, higher sizes and spacer type couplings contact to Rathi NA.</li>
+      <li>Minimum bore is a rough stock bore.</li>
+      <li>For vertical installation, higher sizes and spacer type couplings contact Rathi NA.</li>
     </ul>
   </div>
 </div>

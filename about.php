@@ -30,7 +30,7 @@ include "header.php";
         <h3>Dave Olson</h3>
         <h4>President</h4>
         <?php email("dwo@rathi-na.com"); ?><br>
-        Dave has over 23 years of engineering and business leadership experience in variety of industries.  Dave is focused on developing strong, long-term partnerships with customers and making Rathi NA your go-to source for everything related to couplings. Dave is a licensed Professional Engineer.
+        Dave has over 23 years of engineering and business leadership experience in a variety of industries.  Dave is focused on developing strong, long-term partnerships with customers and making Rathi NA your go-to source for everything related to couplings. Dave is a licensed Professional Engineer.
       </div>
     </div>
 
@@ -41,7 +41,7 @@ include "header.php";
         <h3>Bobby Brown</h3>
         <h4>Vice President of Sales</h4>
         <?php email("bjb@rathi-na.com"); ?><br>
-        Bobby has over 32 years of experience in the industrial power transmission industry. He has experience in a wide variety of coupling applications and is eager to work with you to find the best coupling solution for your needs.
+        Bobby has over 32 years of experience in the industrial power transmission industry. He has experience with a wide variety of coupling applications and is eager to work with you to find the best coupling solution for your needs.
       </div>
     </div>
 
@@ -52,7 +52,7 @@ include "header.php";
         <h3>Erik Parker</h3>
         <h4>Vice President of Operations</h4>
         <?php email("ep@rathi-na.com"); ?><br>
-        Erik has over 14 years of experience in supply chain management, logistics, and quality. Erik is a certified Lean Six Sigma Black Belt and served as a logistics officer in the United States Army for over 10 years. Erik is focused on providing customers high quality products and on-time delivery.
+        Erik has over 14 years of experience in supply chain management, logistics, and quality. Erik is a certified Lean Six Sigma Black Belt and served as a logistics officer in the United States Army for over 10 years. Erik is focused on providing customers with high quality products and on-time delivery.
       </div>
     </div>
 
