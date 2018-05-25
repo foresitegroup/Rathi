@@ -34,16 +34,16 @@ include "header.php";
       </div>
     </div>
 
-    <div class="team">
+<!--     <div class="team">
       <div class="image" style="background-image: url(images/team-bobby-brown.jpg);"></div>
 
       <div class="text">
         <h3>Bobby Brown</h3>
         <h4>Vice President of Sales</h4>
-        <?php email("bjb@rathi-na.com"); ?><br>
+        <?php //email("bjb@rathi-na.com"); ?><br>
         Bobby has over 32 years of experience in the industrial power transmission industry. He has experience with a wide variety of coupling applications and is eager to work with you to find the best coupling solution for your needs.
       </div>
-    </div>
+    </div> -->
 
     <div class="team">
       <div class="image" style="background-image: url(images/team-erik-parker.jpg);"></div>
