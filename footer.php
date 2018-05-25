@@ -15,7 +15,7 @@
           <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
           <br>
 
-          <a href="tel:12816900741">1.281.690.0741</a>
+          <a href="tel:2622901904">262.290.1904</a>
         </div>
       </div>
     </footer>
