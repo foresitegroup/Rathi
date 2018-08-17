@@ -50,7 +50,7 @@ include "header.php";
         </div>
 
         <div>
-          <h1>Rubber Gear</h1>
+          <h1>Sleeve Coupling</h1>
 
           <a href="rbw.php">RBW</a>
         </div>
@@ -109,7 +109,7 @@ include "header.php";
 
       <div>
         <div>
-          <h1>Metallic Gear</h1>
+          <h1>Gear</h1>
 
           <a href="rgd-rgs.php">RGD/RGS</a>
         </div>

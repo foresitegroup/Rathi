@@ -8,7 +8,7 @@ include "header.php";
     <div class="site-width">
       <h2>Elastomeric Coupling</h2>
       <h1>Sleeve Flex / RBW Type</h1>
-      <em>Compare to Lovejoy&reg; S-Flex style</em>
+      <em>Compare to Lovejoy&reg; S-Flex style and Dodge D-Flex</em>
     </div>
   </div>
 
