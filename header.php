@@ -60,7 +60,7 @@ function email($address, $name="") {
 
         <div class="header-right">
           <div class="call">
-            Give us a call <span><a href="tel:2622901904">262.290.1904</a></span>
+            Give us a call <span><a href="tel:3174905542">317.490.5542</a></span>
           </div>
           
           <input type="checkbox" id="toggle-menu" role="button">
