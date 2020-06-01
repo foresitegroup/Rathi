@@ -67,7 +67,7 @@ $(document).ready(function() {
     $.ajax({
       type: 'POST',
       url: $(id_fp).attr('action'),
-      data: $(id_fp).serialize() + '&fpr_id='+fpr_id+'&src=ajax'
+      data: $(id_fp).serialize() + '&fpr_id='+fpr_id+'&topdir='+TopDir+'&src=ajax'
     })
     .done(function(response) {
       $(id_lookup).removeClass('no-result');
