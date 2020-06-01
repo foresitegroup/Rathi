@@ -20,7 +20,7 @@ include "header.php";
     </div>
   </div>
 
-  <div class="site-width">
+<!--   <div class="site-width">
     <h2>Management Team</h2>
 
     <div class="team">
@@ -33,17 +33,6 @@ include "header.php";
         Dave has over 23 years of engineering and business leadership experience in a variety of industries.  Dave is focused on developing strong, long-term partnerships with customers and making Rathi NA your go-to source for everything related to couplings. Dave is a licensed Professional Engineer.
       </div>
     </div>
-
-<!--     <div class="team">
-      <div class="image" style="background-image: url(images/team-bobby-brown.jpg);"></div>
-
-      <div class="text">
-        <h3>Bobby Brown</h3>
-        <h4>Vice President of Sales</h4>
-        <?php //email("bjb@rathi-na.com"); ?><br>
-        Bobby has over 32 years of experience in the industrial power transmission industry. He has experience with a wide variety of coupling applications and is eager to work with you to find the best coupling solution for your needs.
-      </div>
-    </div> -->
 
     <div class="team">
       <div class="image" style="background-image: url(images/team-erik-parker.jpg);"></div>
@@ -66,7 +55,7 @@ include "header.php";
         Randy has over 37 years of experience in coupling design, development, and field support. Randy works closely with the technical team at Rathi Transpower to make sure customers receive the right couplings for their applications.
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <?php include "footer.php"; ?>
