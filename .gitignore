@@ -4,4 +4,4 @@ blog/*
 blog/wp-content/*
 !blog/wp-content/themes/
 blog/wp-content/themes/*
-!blog/wp-content/themes/rathi
+!blog/wp-content/themes/rathi/
